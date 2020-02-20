@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400|Asap:500,700");/* Importing fonts from google*/
+html,
+/* start with the specifics and tab them */
+* { margin: 0; padding: 0; }/*get's rid of the defaults for divs and sections...*/ 
+body{
+  color: #222;
+  font-size: 16px;
+  background: whitesmoke;
+}
+
+.useless{
+  padding:1rem;
+}
+/*        First TAG      */
+.Encounter{
+  color:#fff;
+}
+.container{
+  background-image: url("Images/contemporary-dark-data-669996.jpg");
+  background-size: cover;
+ /* border-radius: 10px; /*for rounded corners*/
+  padding: 2rem;
+}
+
+.divider {
+  display: block;
+	width: 90px;
+	height: 3px;
+  background-color: white;
+  margin-left: 4.5rem;
+}
+
+.welcome{
+  font-size: 68px;
+  margin: 2rem;
+  margin-left: 4rem;
+  font-family:"Asap", "Helvetica", "Tahoma", "Arial", sans-serif;
+}
+.Introduction{
+  margin-top: 3.5rem;
+  margin-right: 3.5rem;
+  margin-bottom: 3.5rem;
+  margin-left: 10rem;
+  font-size: 30px;
+  font-family: "Helvetica", "Tahoma", "Arial", sans-serif;
+}
+.Logo{
+  margin-left: 4rem;
+  padding: 0.25rem;
+  padding-top:0rem;
+  width: 8%;
+  height:13%;
+  margin-top: 8px;
+}
+
+.Table{
+  margin: 0 auto; /*automatically centres right/left the div*/
+  display: table;   /* Allow the centering to work */
+  padding-bottom: 4rem;
+}
+.Table ul li{
+  /*done this so i can re-use the table class in the BUttons :D*/
+  float:left;  /*hadi hiya li 3liha l3emda*/
+  list-style: none;
+  border-right: 1px solid transparent;
+	/*;*/
+}
+.Social-link i {
+  padding-right: 2rem;
+  color:white;
+}
+
+/*           THE BUTTONS       */
+.button-section{
+  color: #fff;
+  background: linear-gradient(-45deg,#222222 , black);
+}
+.Button{
+  padding:2.5rem 10rem 0rem 10rem ;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Button a:link{
+  padding:2rem 0rem; /*top-btm + righ left*/
+  color:white;
+  text-decoration: none; /*to get rid of the underline*/
+}
+.Button a:visited {
+  color: white;
+}
+.Button a:hover{
+  opacity: 0.5;
+
+}
+
+/*         footer           */
+footer{
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'comic sans' , Tahoma;
+}
+#hart{
+  color:red;
+}
+
+.fa-beat {
+  animation:fa-beat 5s ease infinite;
+}
+@keyframes fa-beat {
+  0% {
+    transform:scale(1);
+  }
+  5% {
+    transform:scale(1.25);
+  }
+  20% {
+    transform:scale(1);
+  }
+  30% {
+    transform:scale(1);
+  }
+  35% {
+    transform:scale(1.25);
+  }
+  50% {
+    transform:scale(1);
+  }
+  55% {
+    transform:scale(1.25);
+  }
+  70% {
+    transform:scale(1);
+  }
+}
+
