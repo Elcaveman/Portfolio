@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="El Mehdi Oudaoud">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mehdi Oudaoud</title>
+    <link rel="icon" href="{% static '/img/Icon.png' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+</head>
+<body>
+    <main id="landing" class="window-loaded">
+        <a class="mbtn mbtn-op" href="" id="navburger"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-bars fa-w-14 fa-3x"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class=""></path></svg></a>   
+        <menu class="main-menu">
+                <a class="mbtn mbtn-cl" href="" id="navclose">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-times fa-w-10 fa-5x">
+                        <path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path>
+                    </svg>
+                </a>
+                <div class="main-menu__top">
+                    <div class="logo">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 417.000000 417.000000"
+                            preserveAspectRatio="xMidYMid meet" style="width:100px;">
+                           <metadata>
+                           Created by potrace 1.16, written by Peter Selinger 2001-2019
+                           </metadata>
+                           <g transform="translate(0.000000,417.000000) scale(0.100000,-0.100000)"
+                           stroke="none">
+                           <path d="M1830 4029 c-737 -95 -1370 -616 -1604 -1321 -64 -194 -87 -328 -93
+                           -555 -4 -131 -1 -236 6 -300 81 -654 477 -1220 1059 -1512 270 -136 509 -197
+                           817 -208 327 -12 622 49 912 187 200 95 353 202 517 360 333 322 536 739 587
+                           1205 14 132 7 391 -15 520 -120 711 -609 1293 -1287 1530 -222 78 -396 105
+                           -654 104 -99 -1 -209 -5 -245 -10z m1415 -914 c17 -7 45 -16 63 -19 32 -5 138
+                           -71 158 -97 6 -8 17 -30 24 -49 7 -19 20 -41 29 -48 13 -10 13 -14 2 -21 -11
+                           -7 -11 -13 0 -32 13 -24 25 -82 35 -174 3 -27 7 -51 9 -53 2 -2 7 23 11 57 3
+                           34 11 61 17 61 6 0 7 -21 3 -57 -4 -32 -7 -67 -7 -78 0 -11 -6 -35 -15 -53 -8
+                           -18 -12 -41 -9 -51 3 -11 1 -22 -5 -26 -15 -9 -12 -25 6 -25 10 0 12 -5 7 -12
+                           -4 -7 -9 -45 -11 -85 -2 -45 -10 -85 -23 -109 -10 -21 -19 -45 -19 -54 0 -18
+                           -63 -84 -72 -75 -3 3 -11 -2 -19 -12 -12 -15 -12 -16 3 -10 23 8 12 -20 -20
+                           -53 -25 -25 -25 -25 -13 -2 18 34 7 38 -14 5 -10 -15 -26 -33 -34 -40 -14 -11
+                           -14 -12 -1 -13 8 -1 1 -9 -17 -18 -38 -21 -77 -68 -68 -83 4 -5 -12 -33 -35
+                           -61 -34 -39 -40 -52 -29 -59 11 -7 11 -9 -2 -9 -18 0 -75 -86 -86 -128 -3 -15
+                           -23 -44 -45 -64 -21 -21 -38 -48 -38 -60 0 -53 -216 -308 -261 -308 -8 0 -30
+                           -16 -49 -35 -21 -21 -48 -37 -69 -41 -20 -4 -64 -27 -97 -50 -65 -47 -90 -52
+                           -156 -32 -26 8 -40 18 -44 34 -3 12 -19 34 -35 50 -16 15 -25 30 -19 34 6 4 6
+                           17 1 35 -8 26 -9 27 -10 7 -1 -13 -5 -21 -10 -18 -15 10 -18 53 -4 72 14 19
+                           16 67 4 98 -6 15 -14 7 -49 -46 -23 -35 -42 -68 -42 -73 0 -4 -13 -22 -30 -39
+                           -16 -17 -48 -53 -72 -79 -60 -69 -86 -80 -198 -81 -85 -1 -101 2 -153 27 -47
+                           24 -57 32 -52 48 4 12 1 21 -9 25 -8 3 -15 18 -15 32 -1 15 -3 47 -6 72 -13
+                           112 -16 264 -6 336 30 234 96 577 136 708 8 27 15 59 15 72 l0 23 -38 -22
+                           c-52 -30 -130 -119 -159 -183 -13 -28 -33 -91 -44 -140 -12 -49 -28 -114 -37
+                           -144 -8 -30 -16 -68 -18 -85 -2 -16 -8 -57 -13 -90 -6 -33 -13 -76 -16 -95 -7
+                           -48 -31 -80 -60 -80 -13 0 -26 -4 -29 -9 -5 -7 -222 35 -236 46 -2 2 1 13 8
+                           24 9 15 10 25 1 40 -6 12 -11 44 -12 73 -1 60 26 317 50 466 9 58 17 125 17
+                           150 1 42 0 45 -24 41 -21 -2 -51 -24 -113 -79 -4 -4 -24 -34 -44 -67 -36 -59
+                           -37 -61 -39 -180 -5 -254 -16 -452 -27 -494 -8 -29 -20 -47 -38 -57 -15 -7
+                           -36 -30 -48 -50 l-22 -37 -78 6 c-87 5 -175 38 -193 70 -28 54 -18 336 22 577
+                           22 132 40 300 40 371 0 35 -5 51 -17 59 -17 9 -16 12 7 31 21 18 35 20 86 17
+                           106 -7 210 -94 228 -190 4 -21 10 -38 14 -38 4 0 32 25 62 56 94 96 180 123
+                           286 88 60 -20 98 -54 130 -116 13 -27 27 -48 30 -48 3 0 38 26 77 58 153 125
+                           219 157 302 147 60 -8 126 -44 155 -84 45 -64 83 -216 81 -326 -2 -141 -52
+                           -703 -66 -743 -7 -21 6 -92 17 -92 23 0 147 139 176 196 l31 61 -5 189 c-3
+                           104 -7 230 -10 279 -2 50 -6 212 -8 360 -2 149 -7 290 -11 315 -3 25 -2 107 5
+                           184 8 107 8 142 -2 153 -7 9 -8 17 -2 21 5 4 14 16 20 26 15 29 60 38 129 27
+                           33 -5 78 -8 100 -8 36 2 42 -1 55 -30 8 -18 18 -33 23 -33 4 0 47 20 96 44
+                           168 85 349 121 506 103 39 -5 84 -15 100 -22z" style="fill:#fff;"/>
+                           <path d="M2930 2900 c-14 -5 -61 -19 -105 -31 -104 -29 -205 -69 -205 -80 0
+                           -5 14 -21 30 -36 17 -14 30 -33 30 -42 0 -9 15 -45 32 -81 36 -73 41 -120 54
+                           -540 3 -113 7 -207 9 -209 9 -8 136 116 145 142 5 16 14 26 20 22 12 -8 110
+                           90 110 111 0 18 -9 18 -32 -3 -10 -9 -18 -11 -18 -5 0 6 6 15 14 19 15 9 46
+                           65 46 85 0 7 23 40 50 73 33 40 50 69 50 87 0 15 15 51 33 80 37 59 71 137 82
+                           185 13 62 -48 160 -129 207 -38 22 -56 26 -118 25 -40 -1 -84 -5 -98 -9z" style="fill:#fff;"/>
+                           </g>
+                        </svg>
+                    </div>
+                    <span>Fullstack Web Developer</span>
+                </div>
+                <nav class="main-menu_nav">
+                    <a rel="about" href="#about-me">About</a>
+                    <a rel="skills" href="#skills">Skills</a>
+                    <a rel="work" href="#projects">Projects</a>
+                    <a rel="contact" href="#landing">Contact</a>
+                </nav>
+                <ul class="social">
+                    <li>
+                        <!--twitter-->
+                        <a href="#" target="_blank">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitter fa-w-16 fa-5x">
+                                <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class=""></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <!--linkedin-->
+                        <a href="#" target="_blank">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin-in fa-w-14 fa-5x">
+                                <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" class=""></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <!--facebook-->
+                        <a href="" target="_blank">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f fa-w-10 fa-5x">
+                                <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" class=""></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <!--github-->
+                        <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" style="width: 2rem;"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+        </menu>
+
+        <script>
+            document.getElementById("navburger").addEventListener("click",(e)=>{
+                e.preventDefault();
+                document.body.classList.add("mobileopen");
+            })
+            document.getElementById("navclose").addEventListener("click",(e)=>{
+                e.preventDefault();
+                document.body.classList.remove("mobileopen");
+            })
+
+        </script>
+    <div>
+
+    
+    <div class="page-inner">
+    <section id="section-home" class="section-full">
+        <div class="text-zone">
+            <h1 aria-label="Hello,  I'm El Mehdi  A Web Developer" class="blast-root" id="let">
+            <!-- dinamically make em in JS-->
+            <!-- <span class="blast" aria-hidden="true" style="opacity: 1;">H</span>
+            -->
+            </h1>
+            <p class="gray-text">Fullstack Developer | DevOps Enthusiast</p>
+            <br>
+            <div style="display: flex;flex-wrap: wrap;gap:20px;">
+            <a rel="contact" href="/contact/" class="flat-button">
+                <div> 
+                    <span class="bg"></span>
+                    <span class="base"></span>
+                    <span class="text">&#129309; Contact me!</span>
+                </div> 
+            </a>
+            <a rel="resume" href="/resume/" class="flat-button">
+                <div> 
+                    <span class="bg"></span>
+                    <span class="base"></span>
+                    <span class="text">&#128196; Resume</span>
+                </div> 
+            </a>
+            </div>
+        </div>
+        <div class="img-zone" style="z-index: -2;">
+            <img src="https://i.pinimg.com/474x/94/bf/3b/94bf3bb8490d6a8290375ceba051630e.jpg" 
+            style="max-width: 30vw;">
+        </div>
+        <canvas style="position: absolute;left:0;z-index: -1;" id="canvas" width="356" height="696"></canvas>
+
+    </section>
+    </div>
+    </div>
+    </main>
+    <section class="section-full">
+        <h1>About Me</h1>
+        <div style="display: flex">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquam placeat officiis repudiandae dolorum. Nam hic necessitatibus quaerat qui deserunt.</p>
+            <img src="https://i.pinimg.com/originals/41/92/ce/4192ce3d53b8a0d86a399442067683ae.jpg" style="max-width: 30vw;object-fit: cover;">
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="{% static '/js/oscillator.js' %}"></script>
+    </body>
