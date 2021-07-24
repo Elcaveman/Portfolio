@@ -194,14 +194,14 @@ function initOciliator(remove) {
             // ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
             ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
             ctx.globalCompositeOperation = 'lighter';
-            ctx.strokeStyle = 'rgb(122, 15, 15, 0.3)';
+            ctx.strokeStyle = '#f12626';
             ctx.lineWidth = 1;
 
 
             if (color == 1) {
-                ctx.strokeStyle = 'rgb(34, 34, 34, 0.25)';
+                ctx.strokeStyle = 'rgb(255, 255, 255, 0.25)';
             } else {
-                ctx.strokeStyle = 'rgb(122, 15, 15, 0.3)';
+                ctx.strokeStyle = 'rgb(241,38,38,0.25)';
             }
 
 
@@ -299,7 +299,7 @@ function initOciliator(remove) {
                 let idx = name_index(text,"El Mehdi");
                 for (let i=0;i<text.length;i++){
                     if ((i>=idx.start) && (i<idx.end) && text[i]!=" "){
-                        html+=`<span class="blast" aria-hidden="true" style="opacity: 1;color:#a31515;">${text[i]}</span>`
+                        html+=`<span class="blast" aria-hidden="true" style="opacity: 1;color:var(--dark-red);">${text[i]}</span>`
                     }
                     else if (text[i]==" " && text[i+1]==" "){
                         html+='<br>';
@@ -399,3 +399,304 @@ function initOciliator(remove) {
     }
 }
 window.addEventListener('load',()=>initOciliator(false));
+
+const canvas = document.querySelector("#skills-canvas");
+const ctx = canvas.getContext("2d");
+// OPTIONS
+const opts = {
+    TEXT: [
+      "Django",
+      "Python",
+      "Javascript",
+      "React.js",
+      "Laravel",
+      ".Net 3.5"
+    ],
+  
+    FONT_SIZE:186,
+    FILL: "#F38B49",
+    BG_COLOR: "#111",
+  
+    LINE_GAP: 10,
+  
+    CURVE_STRENGTH: 0.5,
+    WAVE_SPEED: 0.02,
+  
+    LOOP: true
+  };
+  
+  const COLORS = [
+    "#fff",
+    "#f18a54",
+    "#D4342B",
+    "#a31515",
+    "#f12626",
+  ];
+  let selected = [];
+  let resetFills = false;
+  
+  console.clear();
+  
+  function map(n, start1, stop1, start2, stop2) {
+    return ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
+  }
+  
+  function randColor() {
+    let color = COLORS[Math.floor(Math.random() * COLORS.length)];
+    if (selected.length == COLORS.length-1){
+      selected = [];
+    }
+    while (selected.includes(color)){
+      console.log("colo",color,"sel",selected,selected.includes(color))
+      color = COLORS[Math.floor(Math.random() * COLORS.length)];
+    }
+    selected.push(COLORS[Math.floor(Math.random() * COLORS.length)]);
+    return COLORS[Math.floor(Math.random() * COLORS.length)];
+   
+  }
+  
+  const fontFile = "https://assets.codepen.io/9332/rubikmono.ttf";//make sur to update for prod
+  
+  canvas.addEventListener("mouseenter", () => {
+    lines = shuffle(lines);
+    resetFills = true;
+  });
+  canvas.addEventListener("click", () => {
+    lines = shuffle(lines);
+    resetFills = true;
+  });
+  
+  // Global state
+  let font;
+  let path;
+  let lines = [];
+  let width;
+  let height;
+  
+  let timer = 0;
+  
+  /**
+   * Size canvas
+   */
+  function setupCanvas() {
+    // Change scale to 1 on retina screens to see blurry canvas.
+    
+    let scale = window.devicePixelRatio;
+    height = canvas.height* scale;
+    width = canvas.width* scale;
+    canvas.width = width;
+    canvas.height = height;
+  
+    // Normalize coordinate system to use css pixels.
+    ctx.scale(scale, scale);
+  }
+  
+  /**
+   * Clear canvas
+   */
+  function clearCanvas() {
+    ctx.fillStyle = opts.BG_COLOR;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  }
+  
+  class Line {
+    constructor(font, str) {
+      this.str = str.trim().split(" ").join("");
+      this.path = font.getPath(this.str, 0, 0, opts.FONT_SIZE);
+      this.fill = randColor();
+      this.path.fill = this.fill;
+  
+      Object.assign(this, this.path.getBoundingBox());
+      this.width = this.x2 - this.x1;
+      this.height = this.y2 - this.y1;
+    }
+  
+    reset() {
+      this.path = font.getPath(this.str, 0, 0, opts.FONT_SIZE);
+      if (resetFills) {
+        this.fill = randColor();
+      }
+      this.path.fill = this.fill;
+    }
+  
+    moveY(y) {
+      this.path.commands.forEach((cmd) => {
+        switch (cmd.type) {
+          case "M":
+          case "L":
+            cmd.y += y;
+            break;
+          case "C":
+            cmd.y1 += y;
+            cmd.y2 += y;
+            cmd.y += y;
+            break;
+          case "Q":
+            cmd.y1 += y;
+            cmd.y += y;
+            break;
+        }
+      });
+    }
+  
+    stretchX() {
+      this.path.commands.forEach((cmd) => {
+        Line.processCmdPoints(cmd, (x, y) => {
+          return {
+            x: map(x, this.x1, this.x2, 0, width),
+            y
+          };
+        });
+      });
+    }
+  
+    topOffset(index) {
+      this.path.commands.forEach((cmd) => {
+        Line.processCmdPoints(cmd, (x, y) => {
+          let yImpact = ((this.y2 - y) / this.height) * opts.CURVE_STRENGTH;
+  
+          let sinX = map(
+            x,
+            0,
+            width,
+            0 + timer + index,
+            2 * Math.PI + timer + index
+          );
+          let sinY = Math.sin(sinX);
+          const offsetY = y + sinY * this.height * yImpact;
+          return {
+            x,
+            y: offsetY
+          };
+        });
+      });
+    }
+  
+    bottomOffset(index) {
+      this.path.commands.forEach((cmd) => {
+        Line.processCmdPoints(cmd, (x, y) => {
+          let yImpact = ((y - this.y1) / this.height) * opts.CURVE_STRENGTH;
+  
+          let sinX = map(
+            x,
+            0,
+            width,
+            0 + timer + index,
+            2 * Math.PI + timer + index
+          );
+          let sinY = Math.sin(sinX);
+          const offsetY = y + sinY * this.height * yImpact;
+          return {
+            x,
+            y: offsetY
+          };
+        });
+      });
+    }
+  
+    static processCmdPoints(cmd, func) {
+      // callback.apply(this, args);
+      if (cmd.x) {
+        let point = func.apply(this, [cmd.x, cmd.y]);
+        cmd.x = point.x;
+        cmd.y = point.y;
+      }
+      if (cmd.x1) {
+        let point = func.apply(this, [cmd.x1, cmd.y1]);
+        cmd.x1 = point.x;
+        cmd.y1 = point.y;
+      }
+      if (cmd.x2) {
+        let point = func.apply(this, [cmd.x2, cmd.y2]);
+        cmd.x2 = point.x;
+        cmd.y2 = point.y;
+      }
+    }
+  }
+  
+  async function main() {
+    // Load font and get path
+    font = await opentype.load(fontFile);
+    let total_height = 0;
+    opts.TEXT.forEach((line) => {
+      let text = new Line(font, line);
+      // total_height += text.height + opts.LINE_GAP;
+      // if (total_height<=canvas.height){
+      //   lines.push(text);
+      // }
+      lines.push(text);
+    });
+    draw();
+  }
+  
+  function draw() {
+    clearCanvas();
+  
+    let y = 0;
+  
+    timer += opts.WAVE_SPEED;
+  
+    lines.forEach((line, index) => {
+      line.reset();
+      y += line.height + opts.LINE_GAP;
+      line.stretchX();
+  
+      if (index % 2 === 0) {
+        line.bottomOffset(Math.floor(index / 2) / 2);
+      } else {
+        line.topOffset(Math.floor(index / 2) / 2);
+      }
+      line.moveY(y);
+      line.path.draw(ctx);
+    });
+  
+    resetFills = false;
+  
+    if (opts.LOOP) {
+      requestAnimationFrame(draw);
+    }
+  }
+  
+  window.addEventListener("resize", setupCanvas);
+  
+  setupCanvas();
+  main();
+  
+  (function(){
+    const canvas = document.getElementById("canvas");
+    const skill_canvas = document.getElementById("skills-canvas");
+    const landing = document.getElementById("landing");
+
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+
+    skill_canvas.height = 9*window.innerHeight/10;
+    skill_canvas.width = window.innerWidth/2;
+    width = skill_canvas.height ;
+    height =skill_canvas.width ;
+    if (window.innerWidth<800){
+      opts.FONT_SIZE = 100;
+    }
+    
+    canvas.style.display = 'initial'
+    window.addEventListener("resize",(e)=>{
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+        skill_canvas.height = 9*window.innerHeight/10;
+        skill_canvas.width = window.innerWidth/2;
+    })
+
+    let nav = document.getElementById("nav");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function(){
+        let st = window.pageYOffset || document.documentElement.scrollTop; 
+        if (st > lastScrollTop){
+            //console.log("down");
+            nav.style.opacity = 0.1;
+        } else {
+            //console.log("up");
+            nav.style.opacity = 1;
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    }, false);})()

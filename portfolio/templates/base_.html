@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static '/css/style_.css' %}">
 </head>
 <body>
@@ -13,47 +14,18 @@
         borgir
         <!-- hamburger sticky icon , hides on scroll down shows on scrollup -->
     </nav>
-    <canvas id="canvas"></canvas>
     <main id="landing">
-        
-        <script>
-            let canvas = document.getElementById("canvas");
-            let landing = document.getElementById("landing");
-            canvas.height = window.innerHeight;
-            canvas.width = window.innerWidth;
-            canvas.style.display = 'initial'
-            window.addEventListener("resize",(e)=>{
-                canvas.height = window.innerHeight;
-                canvas.width = window.innerWidth;
-            })
-
-            let nav = document.getElementById("nav");
-            let lastScrollTop = 0;
-
-            window.addEventListener("scroll", function(){
-                let st = window.pageYOffset || document.documentElement.scrollTop; 
-                if (st > lastScrollTop){
-                    //console.log("down");
-                    nav.style.opacity = 0.1;
-                } else {
-                    //console.log("up");
-                    nav.style.opacity = 1;
-                }
-                lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-            }, false);
-            
-        </script>
 
         <div class="text-zone">
             <div class="title">
-                <h1 aria-label="Hello,  I'm El Mehdi  A Web Developer" class="blast-root" id="let">
+                <h1 aria-label="Hello,  I'm El Mehdi  A Web Developer" class="blast-root dynamic-content" id="let">
                 <!-- dinamically make em in JS-->
                 <!-- <span class="blast" aria-hidden="true" style="opacity: 1;">H</span>
                 -->
                 </h1>
             </div>
-            <div class="sub-title"><p class="gray-text">Fullstack Developer | DevOps Enthusiast</p></div>
-            <div style="display: flex;flex-wrap: wrap;gap:20px;" id="call-to-action">
+            <div class="sub-title"><p class="gray-text">Fullstack Developer 👨‍💻 | Algebra Enjoyer 🧮</p></div>
+            <div class="dynamic-content" id="call-to-action">
                 <a rel="contact" href="/contact/" class="flat-button bold">
                 <div> 
                     <span class="bg"></span>
@@ -70,35 +42,76 @@
                 </a>
             </div>
         </div>
-        <div class="img-zone">
+        <div class="img-zone dynamic-content">
             <!-- SKilss Sphere -->
-            
+            <canvas id="skills-canvas"></canvas>
         </div>
     </main>
 
     <section id="about">
-
+        <canvas id="canvas"></canvas>
             <!-- social links / paragraph styling / skills sphere -->
             <div grid-data="title">
                 <h1>About Me</h1>
             </div>
-            <div grid-data="description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe alias non itaque totam accusantium esse   error adipisci libero neque voluptas, provident nisi repellendus minima voluptatem doloremque fuga autem  facilis veniam?</p>
+            <div grid-data="description" class="paragraph dynamic-content">
+                <p>I'm El Mehdi OUDAOUD, a well rounded Full-Stack Web Developer, currently 3rd year software engineering student at <a href="http://ensias.um5.ac.ma/" class="inline-link" target="_blank"><b>ENSIAS</b></a>. I am new and inexperienced. But I take pride in building and deploying plateforms that will contribute to your goals. Let's work together 😊</p>
             </div>
-            <ul grid-data="social">
-                <li>link1</li>
-                <li>link2</li>
-                <li>link3</li>
-                <li>link4</li>
-            </ul>
+            <div grid-data="social" class="social dynamic-content">
+                <div class="center">
+                    <div id="social-test">
+                    <ul class="social">
+                      <!-- <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-vimeo" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-behance" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-dribbble" aria-hidden="true"></i></li> -->
+                      <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                      <li><i class="fa fa-at" aria-hidden="true"></i></li>
+                      <!-- <li><i class="fa fa-pied-piper" aria-hidden="true"></i></li> -->
+                    </ul>
+                    </div>
+                      </div>
+            </div>
         <div grid-data="img-zone">
             <img src="https://i.pinimg.com/474x/94/bf/3b/94bf3bb8490d6a8290375ceba051630e.jpg" style="max-width: 30vw;">
         </div>
-        <div grid-data="extra-links">
-                <button>skills</button>
+        <div grid-data="extra-links" class="dynamic-content">
+            <div>
+                <a rel="contact" href="/contact/" class="flat-button bold">
+                    <div> 
+                        <span class="bg"></span>
+                        <span class="base"></span>
+                        <span class="text">See Skills ✨</span>
+                    </div> 
+                    </a>
+            </div>        
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <form action="">
+                <input type="text" name="search-bar" id="">
+            </form>
+            <div>
+                <div>
+                    <h3>File Sharing Plateform</h3>
+                    <p>UX-UI</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>css</li>
+                        <li>wasm</li>
+                    </ul>
+                </div>
             </div>
     </section>
-    <section id="skills" class="hidden">
+    
+    <section id="skills">
         <h1>Skills</h1>
         <form action="">
             <input type="text" name="search-bar" id="">
@@ -117,24 +130,9 @@
         </div>
 
     </section>
-    <section>
-        <h1>Projects</h1>
-        <form action="">
-                <input type="text" name="search-bar" id="">
-            </form>
-            <div>
-                <div>
-                    <h3>File Sharing Plateform</h3>
-                    <p>UX-UI</p>
-                </div>
-                <div>
-                    <ul>
-                        <li>css</li>
-                        <li>wasm</li>
-                    </ul>
-                </div>
-            </div>
-    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/opentype.js/1.3.3/opentype.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash.shuffle@4.2.0/index.js"></script>
     <script src="{% static '/js/oscillator.js' %}"></script>
 </body>
 </html>
