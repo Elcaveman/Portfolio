@@ -55,12 +55,19 @@ export const translations: Translations = {
     fr: 'Je suis'
   },
   'hero.title': {
-    en: 'DATA ENTHUSIAST',
-    fr: 'DATA ENTHUSIAST'
+    en: 'SOFTWARE ENGINEER',
+    fr: 'SOFTWARE ENGINEER'
   },
   'hero.description': {
-    en: 'Welcome to my portfolio! I specialize in building high-performance data infrastructures, optimizing workflows, and integrating AI-driven innovations to drive business growth. With hands-on experience, I’ve led impactful projects for industry leaders, transforming data into strategic insights and scalable solutions. I thrive on solving complex challenges that make a real impact. Innovation is at the core of what I do. 🚀',
-    fr: 'Bienvenue sur mon portfolio ! Je suis spécialisé dans la conception d’infrastructures de données haute performance, l’optimisation des workflows et l’intégration d’innovations basées sur l’IA pour stimuler la croissance des entreprises. Grâce à une expérience concrète, j’ai mené des projets d’envergure pour des leaders du secteur, transformant les données en insights stratégiques et en solutions évolutives. J’aime relever des défis complexes qui ont un impact réel. L’innovation est au cœur de mon travail. 🚀'
+    en: `Welcome to my portfolio! I specialize in Full-stack development and DevOps. 
+    I’ve led projects across architecture developement, and operations, delivering high-performing solutions
+    that adhere to best practices to drive business growth. 
+    With hands-on experience, I’ve led impactful projects for industry leaders, transforming data into strategic insights
+    and scalable solutions. I thrive on solving complex challenges that make a real impact. Innovation is at the core of what I do. 🚀`,
+    fr: `Bienvenue sur mon portfolio ! Je me spécialise dans le développement Full-stack et le DevOps.
+    J’ai dirigé des projets couvrant l’architecture, le développement et les opérations, en livrant des solutions performantes respectant les meilleures pratiques pour stimuler la croissance des entreprises.
+    Fort d’une expérience pratique, j’ai mené des projets à fort impact pour des leaders du secteur, transformant les données en insights stratégiques et solutions évolutives.
+    Je m’épanouis en résolvant des défis complexes qui ont un réel impact. L’innovation est au cœur de mon travail. 🚀`
   },
   'hero.download': {
     en: 'Download Resume',
@@ -105,15 +112,15 @@ export const translations: Translations = {
     fr: 'Mes Projets'
   },
   'projects.subtitle': {
-    en: 'Here are some of my projects I have done.',
+    en: 'Here are some of the projects I\'ve worked on.',
     fr: 'Voici quelques projets que j\'ai réalisés.'
   },
   'skills.title': {
-    en: 'Skills & Technologies',
+    en: 'Skills & Tools',
     fr: 'Compétences & Technologies'
   },
   'skills.subtitle': {
-    en: 'Tools and technologies I use to build modern, responsive, and user-friendly applications',
+    en: 'Tools and technologies I use to build reliable, scalable, and user-friendly applications',
     fr: 'Outils et technologies que j\'utilise pour créer des applications modernes, réactives et conviviales'
   },
   'contact.title': {
@@ -186,53 +193,53 @@ export const translations: Translations = {
     en: 'Specialized data and cloud engineering services to help organizations transform their data into valuable insights and operational advantages.',
     fr: 'Services spécialisés en ingénierie de données et cloud pour aider les organisations à transformer leurs données en informations précieuses et en avantages opérationnels.'
   },
-  'services.dataEngineering.title': {
-    en: 'Data Engineering',
-    fr: 'Ingénierie des Données'
+  'services.softwareEngineering.title': {
+    en: 'Software Engineering',
+    fr: 'Software Engineering'
   },
-  'services.dataEngineering.description': {
-    en: 'Expert design and implementation of data pipelines, ETL processes, and data warehousing solutions using technologies like GCP, BigQuery, and Apache tools. Turning raw data into structured and accessible information for your business.',
-    fr: 'Conception et implémentation expertes de pipelines de données, de processus ETL et de solutions d\'entreposage de données utilisant des technologies comme GCP, BigQuery et les outils Apache. Transformation de données brutes en informations structurées et accessibles pour votre entreprise.'
+  'services.softwareEngineering.description': {
+    en: 'Expert design and development of scalable, high-performance distributed apps across web, mobile, and backend systems. Expertise in Java, Go, React, and other modern frameworks to deliver robust, maintainable solutions aligned with business goals..',
+    fr: ''
   },
-  'services.cloudSolutions.title': {
-    en: 'Cloud Solutions',
-    fr: 'Solutions Cloud'
+  'services.secTest.title': {
+    en: 'Security & Compliance',
+    fr: 'Securité & Compliance'
   },
-  'services.cloudSolutions.description': {
-    en: 'Implementation of cloud-based architectures on GCP and Azure with focus on scalability, security, and cost-efficiency. Design and deployment of cloud data platforms with continuous integration pipelines.',
-    fr: 'Implémentation d\'architectures basées sur le cloud sur GCP et Azure avec un accent sur l\'évolutivité, la sécurité et la rentabilité. Conception et déploiement de plateformes de données cloud avec des pipelines d\'intégration continue.'
+  'services.security.description': {
+    en: 'Integration of security best practices into every stage of the development lifecycle. From identity management to Stress Testing strategies to ensure applications meet reliability and scalability requirements under real-world conditions.',
+    fr: ''
   },
-  'services.dataAnalytics.title': {
-    en: 'Data Analytics & Visualization',
-    fr: 'Analyse de Données & Visualisation'
+  'services.monitoring.title': {
+    en: 'Monitoring & Visualization',
+    fr: 'Monitoring et Visualisation'
   },
-  'services.dataAnalytics.description': {
-    en: 'Development of comprehensive analytical dashboards and reports using Power BI and other visualization tools. Transforming complex data into clear, actionable insights for strategic decision-making.',
-    fr: 'Développement de tableaux de bord analytiques complets et de rapports utilisant Power BI et d\'autres outils de visualisation. Transformation de données complexes en informations claires et exploitables pour la prise de décision stratégique.'
+  'services.monitoring.description': {
+    en: 'Design and integration of observability solutions for proactive system monitoring and troubleshooting. Expertise in Grafana, Prometheus, and ELK for logs, metrics, and visualization',
+    fr: ''
   },
-  'services.machineLearning.title': {
-    en: 'Machine Learning Solutions',
-    fr: 'Solutions d\'Apprentissage Automatique'
+  'services.devopsAutomation.title': {
+    en: 'DevOps & Cloud Infrastructure',
+    fr: 'DevOps et Architecture Cloud'
   },
-  'services.machineLearning.description': {
-    en: 'Design and implementation of custom machine learning and NLP models for business applications. Specialized in text analysis, document processing, and predictive analytics using PyTorch and Hugging Face.',
-    fr: 'Conception et implémentation de modèles personnalisés d\'apprentissage automatique et de NLP pour applications professionnelles. Spécialisé dans l\'analyse de texte, le traitement de documents et l\'analyse prédictive utilisant PyTorch et Hugging Face.'
+  'services.devopsAutomation.description': {
+    en: 'Implementation of CI/CD pipelines, automated deployments, and infrastructure-as-code solutions using AWS, Azure, and other providers. Streamlining deployments and ensuring reliability, scalability, and cost-optimized operations across diverse environments.',
+    fr: ''
   },
-  'services.dataAPIs.title': {
-    en: 'Data APIs & Integration',
-    fr: 'APIs de Données & Intégration'
+  'services.APIs.title': {
+    en: 'Microservices & APIs',
+    fr: 'Microservices & APIs'
   },
-  'services.dataAPIs.description': {
-    en: 'Development of robust APIs for data services using Flask, FastAPI, and GraphQL. Seamless integration of data systems with existing applications and third-party services for efficient information flow.',
-    fr: 'Développement d\'APIs robustes pour services de données utilisant Flask, FastAPI et GraphQL. Intégration transparente des systèmes de données avec les applications existantes et les services tiers pour un flux d\'informations efficace.'
+  'services.APIs.description': {
+    en: 'Design and development of resilient, cloud-native microservices and enterprise-grade APIs. Expertise in Spring Boot, Node.js, and .NET Core for backend services, with secure RESTful and GraphQL interfaces. Skilled in containerization with Docker and Kubernetes, service discovery, and API gateways to enable high-performance, scalable distributed systems.',
+    fr: ''
   },
   'services.consulting.title': {
-    en: 'Data Strategy Consulting',
-    fr: 'Conseil en Stratégie de Données'
+    en: 'Software Strategy Consulting',
+    fr: 'Software Strategy Consulting'
   },
   'services.consulting.description': {
-    en: 'Strategic guidance on data architecture, governance, and analytics roadmaps. Helping organizations leverage their data assets effectively, improve data quality, and implement best practices for data-driven operations.',
-    fr: 'Orientation stratégique sur l\'architecture de données, la gouvernance et les feuilles de route analytiques. Aide aux organisations pour tirer parti efficacement de leurs actifs de données, améliorer la qualité des données et mettre en œuvre les meilleures pratiques pour les opérations basées sur les données.'
+    en: 'Providing strategic guidance on software architecture, DevOps adoption, and cloud migration. Enabling organizations to modernize their systems and accelerate innovation while reducing operational overhead.',
+    fr: ''
   },
 
 

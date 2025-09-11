@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Database, Cloud, BarChart3, Code, Cpu, Lightbulb } from "lucide-react";
+import { Database, Cloud, BarChart3, Code, Cpu, Lightbulb, CodeXml, Shield } from "lucide-react";
 import { useLanguage } from "@/lib/i18n-context";
 import { AnimatedTitle } from "@/components/ui/animated-section";
 
@@ -33,34 +33,34 @@ export default function ServicesSection() {
 
   const services = [
     {
-      icon: <Database className="h-10 w-10" />,
-      title: t('services.dataEngineering.title', 'Data Engineering'),
-      description: t('services.dataEngineering.description', 'Expert design and implementation of data pipelines, ETL processes, and data warehousing solutions using technologies like GCP, BigQuery, and Apache tools. Turning raw data into structured and accessible information for your business.')
+      icon: <Cpu className="h-10 w-10" />,
+      title: t('services.softwareEngineering.title'),
+      description: t('services.softwareEngineering.description')
     },
     {
       icon: <Cloud className="h-10 w-10" />,
-      title: t('services.cloudSolutions.title', 'Cloud Solutions'),
-      description: t('services.cloudSolutions.description', 'Implementation of cloud-based architectures on GCP and Azure with focus on scalability, security, and cost-efficiency. Design and deployment of cloud data platforms with continuous integration pipelines.')
+      title: t('services.devopsAutomation.title'),
+      description: t('services.devopsAutomation.description')
     },
     {
       icon: <BarChart3 className="h-10 w-10" />,
-      title: t('services.dataAnalytics.title', 'Data Analytics & Visualization'),
-      description: t('services.dataAnalytics.description', 'Development of comprehensive analytical dashboards and reports using Power BI and other visualization tools. Transforming complex data into clear, actionable insights for strategic decision-making.')
+      title: t('services.monitoring.title'),
+      description: t('services.monitoring.description')
     },
     {
-      icon: <Cpu className="h-10 w-10" />,
-      title: t('services.machineLearning.title', 'Machine Learning Solutions'),
-      description: t('services.machineLearning.description', 'Design and implementation of custom machine learning and NLP models for business applications. Specialized in text analysis, document processing, and predictive analytics using PyTorch and Hugging Face.')
+      icon: <Shield className="h-10 w-10" />,
+      title: t('services.security.title'),
+      description: t('services.security.description')
     },
     {
       icon: <Code className="h-10 w-10" />,
-      title: t('services.dataAPIs.title', 'Data APIs & Integration'),
-      description: t('services.dataAPIs.description', 'Development of robust APIs for data services using Flask, FastAPI, and GraphQL. Seamless integration of data systems with existing applications and third-party services for efficient information flow.')
+      title: t('services.APIs.title'),
+      description: t('services.APIs.description')
     },
     {
       icon: <Lightbulb className="h-10 w-10" />,
-      title: t('services.consulting.title', 'Data Strategy Consulting'),
-      description: t('services.consulting.description', 'Strategic guidance on data architecture, governance, and analytics roadmaps. Helping organizations leverage their data assets effectively, improve data quality, and implement best practices for data-driven operations.')
+      title: t('services.consulting.title'),
+      description: t('services.consulting.description')
     }
   ];
 

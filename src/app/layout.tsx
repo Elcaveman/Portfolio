@@ -7,8 +7,8 @@ import ClientBody from "./ClientBody";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Oussama SHAIT | Data Enthusiast",
-  description: "Portfolio website for Oussama SHAIT , a Data & Analytics Engineer.",
+  title: "El mehdi Ouadoud | Software engineer",
+  description: "Portfolio and CV of El mehdi oudaoud, a Fullstack Engineer.",
   icons: {
     icon: "/logo.png", // Favicon for browser tab
   },

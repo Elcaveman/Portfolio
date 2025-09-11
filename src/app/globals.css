@@ -319,7 +319,16 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(var(--primary), 0.5);
 }
-
+.flex-1{
+  flex:1;
+}
+.flex-2{
+  flex:2;
+}
+.px-5vw{
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
 /* Add these styles for mobile-friendly touch animations */
 
 /* Active (touch) state for mobile devices */

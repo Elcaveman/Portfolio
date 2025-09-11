@@ -29,20 +29,20 @@ export default function HeroSection() {
       <ParticlesBackground intensity="medium" colorMode="auto">
       {/* <section id="home" className="min-h-screen flex items-center justify-center py-20 relative overflow-hidden bg-[hsl(var(--hero-bg))]"> */}
       <section id="home" className="grid justify-center min-h-screen overflow-hidden bg-[hsl(var(--hero-bg))]">
-        <div className="container mx-auto px-4 content-center">
+        <div className="container mx-auto px-4 content-center px-5vw">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <AnimatedSection className="w-full lg:w-1/2 space-y-6" delay={0.2}>
+            <AnimatedSection className="flex-2 w-full lg:w-1/2 space-y-6" delay={0.2}>
               <div className="space-y-3">
                 <TypewriterText
                   text={t('hero.greeting', 'Hey there!')}
                   className="text-muted-foreground"
                 />
                 <div className="text-4xl md:text-5xl font-bold">
-                  {t('hero.iam', "I'm")} <GradientText text="Oussama Shait" />
+                  {t('hero.iam', "I'm")} <GradientText text="El Mehdi OUDAOUD" />
                 </div>
                 <div className="text-xl md:text-2xl font-medium text-muted-foreground">
                   <AnimatedCharacters
-                    text={t('hero.title', "DATA ENTHUSIAST")}
+                    text={t('hero.title', "Software Engineer")}
                     staggerChildren={0.015}
                     delayStart={0.6}
                   />
@@ -55,7 +55,8 @@ export default function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.2 }}
               >
-                {t('hero.description', "Welcome to my portfolio! I specialize in building high-performance data infrastructures, optimizing workflows, and integrating AI-driven innovations to drive business growth. With hands-on experience, I’ve led impactful projects for industry leaders, transforming data into strategic insights and scalable solutions. I thrive on solving complex challenges that make a real impact. Innovation is at the core of what I do. 🚀")}
+                {t('hero.description', ``
+                )}
               </motion.p>
 
               <motion.div
@@ -64,18 +65,8 @@ export default function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.4 }}
               >
-                {/* <motion.a
-                  href="https://github.com/oussamashait"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-secondary rounded-full p-2 hover:bg-secondary/80 transition-colors"
-                  whileHover={{ y: -3, scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <Github className="h-5 w-5" />
-                </motion.a> */}
                 <motion.a
-                  href="https://www.linkedin.com/in/oussama-shait-580653255/"
+                  href="https://www.linkedin.com/in/el-mehdi-oudaoud/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-secondary rounded-full p-2 hover:bg-secondary/80 transition-colors"
@@ -85,7 +76,7 @@ export default function HeroSection() {
                   <Linkedin className="h-5 w-5" />
                 </motion.a>
                 <motion.a
-                  href="mailto:oussama.seth22@gmail.com"
+                  href="mailto:02.oudaoud@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-secondary rounded-full p-2 hover:bg-secondary/80 transition-colors"
@@ -130,7 +121,7 @@ export default function HeroSection() {
             </AnimatedSection>
 
             <motion.div
-              className="w-full lg:w-1/2 flex justify-center lg:justify-end relative"
+              className="flex-1 w-full lg:w-1/2 flex justify-center lg:justify-end relative max-lg:order-first"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
@@ -139,7 +130,7 @@ export default function HeroSection() {
               <div className="relative">
                 {/* Profile Picture Container */}
                 <motion.div
-                  className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
+                  className="relative w-[250px] h-[250px] md:w-[350px] md:h-[350px]"
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
@@ -161,7 +152,7 @@ export default function HeroSection() {
                       <div className="relative w-full h-full rounded-full overflow-hidden">
                         <Image
                           src="/profile-picture.png"
-                          alt="Oussama Shait - Data & Analytics Engineer"
+                          alt="El Mehdi Oudaoud - Software Engineer"
                           fill
                           className="object-cover"
                           priority
