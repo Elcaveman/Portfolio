@@ -140,15 +140,44 @@ interface ImageModalProps {
   isOpen: boolean;
   onClose: () => void;
   imageSrc: string;
+  target:string,
   alt: string;
   caption?: string;
 }
 
-export function ImageModal({ isOpen, onClose, imageSrc, alt, caption }: ImageModalProps) {
-  return (
-    <Modal isOpen={isOpen} onClose={onClose} size="lg">
-      <div className="relative">
-        <div className="relative w-full h-[80vh] overflow-hidden">
+export function ImageModal({ isOpen, onClose, imageSrc, target , alt, caption }: ImageModalProps) {
+  if (target!="" && target!=undefined){
+    return (
+        <Modal isOpen={isOpen} onClose={onClose} size="lg">
+          <a href={target}  target="_blank">
+            <ImageModalDetails 
+              isOpen={isOpen} 
+              onClose={onClose} 
+              imageSrc={imageSrc} 
+              target={target} 
+              alt={alt} 
+              caption={caption}></ImageModalDetails>
+          </a>
+          </Modal>
+      );
+    }
+    else{
+      return (
+        <Modal isOpen={isOpen} onClose={onClose} size="lg">
+          <ImageModalDetails 
+            isOpen={isOpen} 
+            onClose={onClose} 
+            imageSrc={imageSrc} 
+            target={target} 
+            alt={alt} 
+            caption={caption}></ImageModalDetails>
+        </Modal>
+      )
+    }
+}
+function ImageModalDetails({ isOpen, onClose, imageSrc, target , alt, caption }: ImageModalProps){
+  return (<div className="relative">
+        <div className="relative w-full h-[80vh] overflow-hidden hover:bg-muted">
           <motion.img
             src={imageSrc}
             alt={alt}
@@ -170,8 +199,7 @@ export function ImageModal({ isOpen, onClose, imageSrc, alt, caption }: ImageMod
           </motion.div>
         )}
       </div>
-    </Modal>
-  );
+  )
 }
 
 // Hook for controlling modals

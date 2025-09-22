@@ -190,40 +190,40 @@ export const translations: Translations = {
     fr: 'Mes Services'
   },
   'services.subtitle': {
-    en: 'Specialized data and cloud engineering services to help organizations transform their data into valuable insights and operational advantages.',
-    fr: 'Services spécialisés en ingénierie de données et cloud pour aider les organisations à transformer leurs données en informations précieuses et en avantages opérationnels.'
+    en: 'Specialized expertise in fullstack Java development, crafting end-to-end web applications from modern front-end interfaces to high-performance back-end systems, enabling organizations to automate processes, enhance user experience, and drive operational efficiency.',
+    fr: 'Expertise en développement Java fullstack pour créer des applications web complètes qui automatisent les processus et améliorent l\'efficacité opérationnelle..'
   },
   'services.softwareEngineering.title': {
     en: 'Software Engineering',
     fr: 'Software Engineering'
   },
   'services.softwareEngineering.description': {
-    en: 'Expert design and development of scalable, high-performance distributed apps across web, mobile, and backend systems. Expertise in Java, Go, React, and other modern frameworks to deliver robust, maintainable solutions aligned with business goals..',
-    fr: ''
+    en: 'Expert design and development of scalable, high-performance distributed apps across web, mobile, and backend systems. Expertise in Java, Go, React, and other modern frameworks to deliver robust, maintainable solutions aligned with business goals.',
+    fr: 'Conception et développement expert d\'applications distribuées évolutives et hautes performances pour le web, le mobile et les systèmes backend. Expertise en Java, Go, React et autres frameworks modernes pour fournir des solutions robustes et maintenables alignées sur les objectifs métier.'
   },
   'services.secTest.title': {
     en: 'Security & Compliance',
-    fr: 'Securité & Compliance'
+    fr: 'Sécurité & Conformité'
   },
   'services.security.description': {
     en: 'Integration of security best practices into every stage of the development lifecycle. From identity management to Stress Testing strategies to ensure applications meet reliability and scalability requirements under real-world conditions.',
-    fr: ''
+    fr: 'Intégration des meilleures pratiques de sécurité à chaque étape du cycle de vie de développement. De la gestion des identités aux stratégies de test de résistance (Stress Testing) pour garantir que les applications répondent aux exigences de fiabilité et d\'évolutivité dans des conditions réelles.'
   },
   'services.monitoring.title': {
     en: 'Monitoring & Visualization',
-    fr: 'Monitoring et Visualisation'
+    fr: 'Surveillance & Visualisation'
   },
   'services.monitoring.description': {
     en: 'Design and integration of observability solutions for proactive system monitoring and troubleshooting. Expertise in Grafana, Prometheus, and ELK for logs, metrics, and visualization',
-    fr: ''
+    fr: 'Conception et intégration de solutions d\'observabilité pour une surveillance proactive et un dépannage du système. Expertise en Grafana, Prometheus et ELK pour les logs, les métriques et la visualisation.'
   },
   'services.devopsAutomation.title': {
     en: 'DevOps & Cloud Infrastructure',
-    fr: 'DevOps et Architecture Cloud'
+    fr: 'DevOps et Infrastructures Cloud'
   },
   'services.devopsAutomation.description': {
     en: 'Implementation of CI/CD pipelines, automated deployments, and infrastructure-as-code solutions using AWS, Azure, and other providers. Streamlining deployments and ensuring reliability, scalability, and cost-optimized operations across diverse environments.',
-    fr: ''
+    fr: 'Mise en œuvre de pipelines CI/CD, de déploiements automatisés et de solutions d\'infrastructure-as-code avec AWS, Azure et d\'autres fournisseurs. Rationalisation des déploiements et garantie de la fiabilité, de l\'évolutivité et d\'opérations optimisées en coût dans divers environnements.'
   },
   'services.APIs.title': {
     en: 'Microservices & APIs',
@@ -231,18 +231,15 @@ export const translations: Translations = {
   },
   'services.APIs.description': {
     en: 'Design and development of resilient, cloud-native microservices and enterprise-grade APIs. Expertise in Spring Boot, Node.js, and .NET Core for backend services, with secure RESTful and GraphQL interfaces. Skilled in containerization with Docker and Kubernetes, service discovery, and API gateways to enable high-performance, scalable distributed systems.',
-    fr: ''
+    fr: 'Conception et développement de microservices résilients cloud-native et d\'APIs de qualité enterprise. Expertise en Spring Boot, Node.js et .NET Core pour les services backend, avec des interfaces RESTful et GraphQL sécurisées. Compétences en conteneurisation avec Docker et Kubernetes, en découverte de services et en gateways API pour permettre des systèmes distribués hautes performances et évolutifs.'
   },
   'services.consulting.title': {
     en: 'Software Strategy Consulting',
-    fr: 'Software Strategy Consulting'
+    fr: 'Conseil en Stratégie Logicielle'
   },
   'services.consulting.description': {
     en: 'Providing strategic guidance on software architecture, DevOps adoption, and cloud migration. Enabling organizations to modernize their systems and accelerate innovation while reducing operational overhead.',
-    fr: ''
-  },
-
-
+    fr: 'Fourniture de conseils stratégiques sur l\'architecture logicielle, l\'adoption du DevOps et la migration vers le cloud. Permettre aux organisations de moderniser leurs systèmes et d\'accélérer l\'innovation tout en réduisant la charge opérationnelle.'},
   // Common Labels
   'common.keyAchievements': {
     en: 'Key Achievements',
@@ -278,63 +275,82 @@ export const translations: Translations = {
   },
 
   // Education Content
-  'education.esi.institution': {
-    en: 'THE SCHOOL OF INFORMATION SCIENCES (ESI)',
-    fr: 'ÉCOLE DES SCIENCES DE L\'INFORMATION (ESI)'
-  },
-  'education.esi.degree': {
-    en: 'State Engineer Degree in Data and Knowledge',
-    fr: 'Diplôme d\'Ingénieur d\'État en Données et Connaissances'
-  },
-  'education.esi.description': {
-    en: 'Earned a State Engineer Degree specializing in Data and Knowledge engineering, focusing on advanced data processing techniques and knowledge management systems.',
-    fr: 'Obtention d\'un diplôme d\'ingénieur d\'État spécialisé en ingénierie des données et des connaissances, axé sur les techniques avancées de traitement des données et les systèmes de gestion des connaissances.'
-  },
-  'education.esi.achievement1': {
-    en: 'Specialized in data engineering and knowledge management',
-    fr: 'Spécialisé en ingénierie des données et gestion des connaissances'
-  },
-  'education.esi.achievement2': {
-    en: 'Developed expertise in Python, Java, SQL, and data processing frameworks',
-    fr: 'Développé une expertise en Python, Java, SQL et frameworks de traitement de données'
-  },
-  'education.esi.achievement3': {
-    en: 'Participated in academic research on machine learning applications',
-    fr: 'Participation à la recherche académique sur les applications d\'apprentissage automatique'
-  },
-  'education.esi.achievement4': {
-    en: 'Member of technical teams in clubs like Enactus and Geni Entreprise',
-    fr: 'Membre d\'équipes techniques dans des clubs comme Enactus et Geni Entreprise'
-  },
-  'education.esi.achievement5': {
-    en: 'Completed internships focused on data science and analytics',
-    fr: 'Stages effectués axés sur la science des données et l\'analytique'
-  },
-  'education.esi.course1': {
-    en: 'Data Engineering',
-    fr: 'Ingénierie des Données'
-  },
-  'education.esi.course2': {
-    en: 'Machine Learning',
-    fr: 'Apprentissage Automatique'
-  },
-  'education.esi.course3': {
-    en: 'Database Systems',
-    fr: 'Systèmes de Bases de Données'
-  },
-  'education.esi.course4': {
-    en: 'Web Application Development',
-    fr: 'Développement d\'Applications Web'
-  },
-  'education.esi.course5': {
-    en: 'Big Data Processing',
-    fr: 'Traitement des Mégadonnées'
-  },
-  'education.esi.course6': {
-    en: 'AI Fundamentals',
-    fr: 'Fondamentaux de l\'IA'
-  },
-
+  'education.ensias.institution': {
+  en: 'National School of Computer Science and Systems Analysis (ENSIAS)',
+  fr: 'École Nationale Supérieure d\'Informatique et d\'Analyse des Systèmes (ENSIAS)'
+},
+'education.ensias.degree': {
+  en: 'State Engineer Degree in Software Engineering',
+  fr: 'Diplôme d\'Ingénieur d\'État en Génie Logiciel'
+},
+'education.ensias.description': {
+  en: 'Earned a State Engineer Degree specializing in Software Engineering, focusing on software design, architecture, and large-scale system development.',
+  fr: 'Obtention d\'un diplôme d\'ingénieur d\'État spécialisé en Génie Logiciel, axé sur la conception, l’architecture logicielle et le développement de systèmes à grande échelle.'
+},
+'education.ensias.achievement1': {
+  en: 'Specialized in software architecture, design patterns, and system analysis',
+  fr: 'Spécialisé en architecture logicielle, patrons de conception et analyse des systèmes'
+},
+'education.ensias.achievement2': {
+  en: 'Developed expertise in Java, Python, JavaScript, and enterprise frameworks',
+  fr: 'Développé une expertise en Java, Python, JavaScript et frameworks d’entreprise'
+},
+'education.ensias.achievement3': {
+  en: 'Worked on academic and industrial projects in software development and agile methodologies',
+  fr: 'Participation à des projets académiques et industriels en développement logiciel et méthodologies agiles'
+},
+'education.ensias.achievement4': {
+  en: 'Member of student clubs and associations contributing to tech and innovation initiatives',
+  fr: 'Membre de clubs et associations étudiantes contribuant à des initiatives technologiques et innovantes'
+},
+'education.ensias.achievement5': {
+  en: 'Completed internships in software engineering, system design, and enterprise applications',
+  fr: 'Stages effectués en ingénierie logicielle, conception de systèmes et applications d’entreprise'
+},
+'education.ensias.course1': {
+  en: 'Software Architecture',
+  fr: 'Architecture Logicielle'
+},
+'education.ensias.course2': {
+  en: 'Java EE/ Spring boot',
+  fr: 'Java EE/ Spring boot'
+},
+'education.ensias.course3': {
+  en: 'Databases and Information Systems',
+  fr: 'Bases de Données et Systèmes d’Information'
+},
+'education.ensias.course4': {
+  en: 'Web and Mobile Application Development',
+  fr: 'Développement d’Applications Web et Mobiles'
+},
+'education.ensias.course5': {
+  en: 'Agile Methods',
+  fr: 'Méthodes Agiles'
+},
+'education.ensias.course6': {
+  en: 'Systems Analysis and Design',
+  fr: 'Analyse et Conception des Systèmes'
+},
+'education.ensias.course7': {
+  en: 'Graph Theory',
+  fr: 'Théorie des Graphes'
+},
+'education.ensias.course8': {
+  en: 'Compilers',
+  fr: 'Compilation'
+},
+'education.ensias.course9': {
+  en: 'Computer Architecture and Assembly Language',
+  fr: 'Architecture des Ordinateurs et Langage Assembleur'
+},
+'education.ensias.course10': {
+  en: 'Operating Systems',
+  fr: 'Systèmes d’Exploitation'
+},
+'education.ensias.course11': {
+  en: 'Automata Theory',
+  fr: 'Théorie des Automates'
+},
   'education.cpge.institution': {
     en: 'Preparatory Classes for Engineering Schools (CPGE)',
     fr: 'Classes Préparatoires aux Grandes Écoles (CPGE)'

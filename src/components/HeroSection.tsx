@@ -21,7 +21,7 @@ export default function HeroSection() {
     // Simulate API call
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1200);
   }, []);
 
   return (

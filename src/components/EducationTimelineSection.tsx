@@ -14,6 +14,7 @@ export default function EducationTimelineSection() {
   const [selectedCertificate, setSelectedCertificate] = useState<{
     image: string;
     name: string;
+    link:string;
     date?: string;
   } | null>(null);
   const { t } = useLanguage();
@@ -23,32 +24,38 @@ export default function EducationTimelineSection() {
     {
       id: 1,
       period: "2019 - 2022",
-      institution: t('education.esi.institution', 'THE SCHOOL OF INFORMATION SCIENCES (ESI)'),
-      degree: t('education.esi.degree', 'State Engineer Degree in Data and Knowledge'),
+      institution: t('education.ensias.institution', 'National School of Computer Science and Systems Analysis (ENSIAS)'),
+      degree: t('education.ensias.degree', 'State Engineer Degree in Software Engineering'),
       location: "Rabat, Morocco",
-      description: t('education.esi.description', 'Earned a State Engineer Degree specializing in Data and Knowledge engineering, focusing on advanced data processing techniques and knowledge management systems.'),
+      description: t('education.ensias.description', 'Earned a State Engineer Degree specializing in Software Engineering, focusing on software design, architecture, and large-scale system development.'),
       icon: "🎓",
       achievements: [
-        t('education.esi.achievement1', "Specialized in data engineering and knowledge management"),
-        t('education.esi.achievement2', "Developed expertise in Python, Java, SQL, and data processing frameworks"),
-        t('education.esi.achievement3', "Participated in academic research on machine learning applications"),
-        t('education.esi.achievement4', "Member of technical teams in clubs like Enactus and Geni Entreprise"),
-        t('education.esi.achievement5', "Completed internships focused on data science and analytics")
+        t('education.ensias.achievement1', "Specialized in software architecture, design patterns, and system analysis"),
+        t('education.ensias.achievement2', "Developed expertise in Java, Python, JavaScript, and enterprise frameworks"),
+        t('education.ensias.achievement3', "Worked on academic and industrial projects in software development and agile methodologies"),
+        t('education.ensias.achievement4', "Member of student clubs and associations contributing to tech and innovation initiatives"),
+        t('education.ensias.achievement5', "Completed internships in software engineering, system design, and enterprise applications")
       ],
       courses: [
-        t('education.esi.course1', "Data Engineering"),
-        t('education.esi.course2', "Machine Learning"),
-        t('education.esi.course3', "Database Systems"),
-        t('education.esi.course4', "Web Application Development"),
-        t('education.esi.course5', "Big Data Processing"),
-        t('education.esi.course6', "AI Fundamentals")
+        t('education.ensias.course1', "Software Architecture and Design Patterns"),
+        t('education.ensias.course2', "Advanced Programming and Java EE"),
+        t('education.ensias.course3', "Databases and Information Systems"),
+        t('education.ensias.course4', "Web and Mobile Application Development"),
+        t('education.ensias.course5', "Software Project Management and Agile Methods"),
+        t('education.ensias.course6', "Systems Analysis and Design"),
+        t('education.ensias.course7', "Graph Theory and Algorithms"),
+        t('education.ensias.course8', "Compilation Techniques"),
+        t('education.ensias.course9', "Computer Architecture and Assembly Language"),
+        t('education.ensias.course10', "Operating Systems"),
+        t('education.ensias.course11', "Formal Languages and Automata Theory")
       ],
       certificates: [
         {
           name: "State Engineer Degree Certificate",
           image: "https://ext.same-assets.com/0/1349013658.svg",
-          date: "June 2022"
-        }
+          link: "",
+          date: "September 2022"
+        },
       ]
     },
     {
@@ -56,7 +63,7 @@ export default function EducationTimelineSection() {
       period: "2017 - 2019",
       institution: t('education.cpge.institution', 'Preparatory Classes for Engineering Schools (CPGE)'),
       degree: t('education.cpge.degree', 'Mathematics - Physics (MP)'),
-      location: "Casablanca, Morocco",
+      location: "Mohammedia, Morocco",
       description: t('education.cpge.description', 'Completed intensive two-year preparatory program focusing on advanced mathematics and physics, providing strong analytical foundations for engineering studies.'),
       icon: "🧮",
       achievements: [
@@ -92,33 +99,25 @@ export default function EducationTimelineSection() {
       ],
       courses: [],
       certificates: [
-        {
-          name: t('education.certifications.cert1', "Google Cloud Associate Data Practitioner"),
-          image: "https://ext.same-assets.com/0/3072991592.svg",
-          date: "2023"
-        },
-        {
-          name: t('education.certifications.cert2', "Astronomer Certification - Apache Airflow"),
-          image: "https://ext.same-assets.com/0/2715258859.svg",
-          date: "2023"
-        },
-        {
-          name: t('education.certifications.cert3', "Databricks Lakehouse Fundamentals"),
-          image: "https://ext.same-assets.com/0/1462517727.svg",
-          date: "2022"
-        },
-        {
-          name: t('education.certifications.cert4', "Scrum Foundation Professional Certification"),
-          image: "https://ext.same-assets.com/0/2715258859.svg",
-          date: "2022"
-        }
-      ]
+          {
+            name: "AWS Certified Cloud Practitioner",
+            image: "/aws.png",
+            link: "https://www.credly.com/badges/9d714399-1d58-4b93-adab-595c7d894426/public_url",
+            date: "2023"
+          },
+          {
+            name: "IBM Big Data Certification",
+            image: "https://ext.same-assets.com/0/1349013658.svg",
+            link:"",
+            date: "2022"
+          }
+        ]
     }
   ];
 
   const educationData = getEducationData();
 
-  const openCertificateModal = (certificate: { image: string; name: string; date?: string }) => {
+  const openCertificateModal = (certificate: { image: string, link:string, name: string; date?: string }) => {
     setSelectedCertificate(certificate);
     certificateModal.open();
   };
@@ -278,6 +277,7 @@ export default function EducationTimelineSection() {
           isOpen={certificateModal.isOpen}
           onClose={certificateModal.close}
           imageSrc={selectedCertificate.image}
+          target={selectedCertificate.link}
           alt={`${selectedCertificate.name} Certificate`}
           caption={`${selectedCertificate.name}${selectedCertificate.date ? ` - Issued: ${selectedCertificate.date}` : ''}`}
         />
