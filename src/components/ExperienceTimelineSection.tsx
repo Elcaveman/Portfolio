@@ -21,139 +21,99 @@ export default function ExperienceTimelineSection() {
 
   // Experience data with translation keys
   const getExperienceData = () => [
-    {
-      id: 1,
-      title: t('experience.alten.title', 'Data & Analytics Engineer'),
-      company: "Alten",
-      period: "September 2022 - Present",
-      description: t('experience.alten.description', 'Data & Analytics Engineer with dual roles supporting corporate strategy and analytics engineering for major clients like Bouygues Telecom and Renault. Implementing data analysis systems to support strategic decision-making using cloud technologies.'),
-      skills: ["GCP", "Azure", "Python", "PostgreSQL", "Power BI", "BigQuery", "Data Pipelines"],
-      achievements: [
-        t('experience.alten.achievement1', "Designed data pipelines using Google Cloud Platform services for efficient data processing"),
-        t('experience.alten.achievement2', "Used BigQuery for complex queries and data analysis, optimizing processing efficiency"),
-        t('experience.alten.achievement3', "Developed Power BI dashboards for real-time monitoring of productivity and operational metrics"),
-        t('experience.alten.achievement4', "Implemented real-time data flows with Google Cloud services for continuous data ingestion from Salesforce"),
-        t('experience.alten.achievement5', "Created dynamic reports in Power BI, integrating complex data models for data-driven decisions"),
-        t('experience.alten.achievement6', "Collaborated on market analysis and recruitment process optimization initiatives")
-      ],
-      projects: [
-        {
-          name: t('experience.alten.project1.name', "Corporate & Strategy Analytics"),
-          description: t('experience.alten.project1.description', "Implemented data analysis systems using business intelligence tools (Azure, Python, Power Platform) for data automation and reporting"),
-          technologies: ["Azure", "Python", "Power BI", "Power Apps", "Power Automate"]
-        },
-        {
-          name: t('experience.alten.project2.name', "Bouygues Telecom Data Pipelines"),
-          description: t('experience.alten.project2.description', "Designed and optimized data pipelines on Google Cloud Platform for efficient data processing and analysis"),
-          technologies: ["GCP", "BigQuery", "Cloud Functions", "Data Studio", "Python"]
-        },
-        {
-          name: t('experience.alten.project3.name', "Renault Salesforce Integration"),
-          description: t('experience.alten.project3.description', "Implemented real-time data flows from Salesforce with dynamic Power BI reporting dashboards"),
-          technologies: ["GCP", "Salesforce API", "Power BI", "Data Factory", "Cloud Storage"]
-        }
-      ],
-      team: t('experience.alten.team', "Data & Analytics Team"),
-      location: "Rabat, Morocco"
-    },
-    {
-      id: 2,
-      title: t('experience.ocp.title', 'Data & Analytics Engineer'),
-      company: "OCP Solutions",
-      period: "March 2022 - September 2022",
-      description: t('experience.ocp.description', 'Developed a generic framework for machine learning techniques, with a focus on multilingual summary models. Implemented NLP solutions and integrated AI features with web applications.'),
-      skills: ["Parquet", "Elasticsearch", "Spark", "Hugging Face", "PyTorch", "Flask", "Next.js", "MongoDB", "MySQL"],
-      achievements: [
-        t('experience.ocp.achievement1', "Developed a generic framework for machine learning techniques, including multilingual summary models"),
-        t('experience.ocp.achievement2', "Deployed NLP models using Hugging Face and PyTorch for automatic text summarization"),
-        t('experience.ocp.achievement3', "Integrated APIs with Flask to add AI features to interactive web applications"),
-        t('experience.ocp.achievement4', "Worked with document processing pipelines using Elasticsearch and Parquet for efficient data storage"),
-        t('experience.ocp.achievement5', "Implemented full-stack solutions connecting ML models with front-end interfaces")
-      ],
-      projects: [
-        {
-          name: t('experience.ocp.project1.name', "Multilingual Text Summarization"),
-          description: t('experience.ocp.project1.description', "Developed and deployed NLP models for automatic multilingual text summarization"),
-          technologies: ["Hugging Face", "PyTorch", "NLTK", "Spacy"]
-        },
-        {
-          name: t('experience.ocp.project2.name', "AI Web Integration"),
-          description: t('experience.ocp.project2.description', "Integrated machine learning models with web applications through REST APIs"),
-          technologies: ["Flask", "Next.js", "MongoDB", "REST API"]
-        },
-        {
-          name: t('experience.ocp.project3.name', "Document Processing Pipeline"),
-          description: t('experience.ocp.project3.description', "Created data processing pipeline for document storage and retrieval"),
-          technologies: ["Elasticsearch", "Spark", "Parquet", "MySQL"]
-        }
-      ],
-      team: t('experience.ocp.team', "AI & Machine Learning Team"),
-      location: "Casablanca, Morocco"
-    },
-    {
-      id: 3,
-      title: t('experience.1mweb.title', 'Data Scientist'),
-      company: "1M WEB LTD",
-      period: "July 2021 - September 2021",
-      description: t('experience.1mweb.description', 'Developed a machine learning model for automatic CV information extraction. Leveraged NLP libraries for CV data analysis and extraction, automated workflows for parallel CV processing.'),
-      skills: ["Python", "NLTK", "SpaCy", "TextBlob", "Apache Airflow", "Agile"],
-      achievements: [
-        t('experience.1mweb.achievement1', "Developed a machine learning model for automatic CV information extraction"),
-        t('experience.1mweb.achievement2', "Leveraged NLP libraries (NLTK, SpaCy, TextBlob) for CV data analysis and extraction"),
-        t('experience.1mweb.achievement3', "Automated workflows using Apache Airflow for parallel CV processing"),
-        t('experience.1mweb.achievement4', "Worked in an Agile environment to integrate models into existing systems"),
-        t('experience.1mweb.achievement5', "Enhanced recruitment processes through AI-powered document analysis")
-      ],
-      projects: [
-        {
-          name: t('experience.1mweb.project1.name', "CV Information Extraction"),
-          description: t('experience.1mweb.project1.description', "ML-powered system to automatically extract structured data from CVs and resumes"),
-          technologies: ["Python", "NLTK", "SpaCy", "TextBlob"]
-        },
-        {
-          name: t('experience.1mweb.project2.name', "Workflow Automation"),
-          description: t('experience.1mweb.project2.description', "Parallel processing system for CV analysis using Apache Airflow"),
-          technologies: ["Apache Airflow", "Python", "Docker"]
-        }
-      ],
-      team: t('experience.1mweb.team', "Data Science Team"),
-      location: "London, United Kingdom (Remote)"
-    },
-    {
-      id: 4,
-      title: t('experience.ispits.title', 'Data Scientist'),
-      company: "ISPITS, CHU",
-      period: "June 2020 - August 2020",
-      description: t('experience.ispits.description', 'Designed and developed a mobile app with Java and Android Studio for monitoring smartphone usage. Built a Flask backend for managing app data and implemented real-time notifications.'),
-      skills: ["Java", "Android Studio", "Figma", "Flask", "UI/UX Design"],
-      achievements: [
-        t('experience.ispits.achievement1', "Designed and developed a mobile app with Java and Android Studio for monitoring smartphone usage"),
-        t('experience.ispits.achievement2', "Built a Flask backend for managing app data, user sessions, and frontend-server communication"),
-        t('experience.ispits.achievement3', "Implemented real-time notifications to alert users of risky behaviors"),
-        t('experience.ispits.achievement4', "Created UI/UX designs using Figma for intuitive user experience"),
-        t('experience.ispits.achievement5', "Integrated data collection and analysis components for usage pattern detection")
-      ],
-      projects: [
-        {
-          name: t('experience.ispits.project1.name', "Smartphone Usage Monitor"),
-          description: t('experience.ispits.project1.description', "Mobile application for tracking and analyzing smartphone usage patterns"),
-          technologies: ["Java", "Android Studio", "SQLite"]
-        },
-        {
-          name: t('experience.ispits.project2.name', "App Backend System"),
-          description: t('experience.ispits.project2.description', "Server-side application for data storage, analysis, and user management"),
-          technologies: ["Flask", "Python", "RESTful API"]
-        },
-        {
-          name: t('experience.ispits.project3.name', "UI/UX Design"),
-          description: t('experience.ispits.project3.description', "Design of intuitive user interfaces and experiences for mobile application"),
-          technologies: ["Figma", "Material Design"]
-        }
-      ],
-      team: t('experience.ispits.team', "Mobile Development Team"),
-      location: "Fès, Morocco"
-    }
-  ];
+  {
+    id: 1,
+    title: t('experience.transactis.title'),
+    company: "Transactis",
+    period: "June 2023 - Present",
+    description: t('experience.transactis.description'),
+    skills: ["Java", "Spring Boot", "Kubernetes", "IBM MQ", "Golang", "RabbitMQ", "Kafka", "ELK"],
+    achievements: [
+      t('experience.transactis.achievement1'),
+      t('experience.transactis.achievement2'),
+      t('experience.transactis.achievement3'),
+      t('experience.transactis.achievement4'),
+      t('experience.transactis.achievement5')
+    ],
+    projects: [
+      {
+        name: t('experience.transactis.project1.name'),
+        description: t('experience.transactis.project1.description'),
+        technologies: ["IBM MQ", "Java 17", "Spring Boot", "Kubernetes", "RabbitMQ"]
+      },
+      {
+        name: t('experience.transactis.project2.name'),
+        description: t('experience.transactis.project2.description'),
+        technologies: ["S3", "AES Encryption","IBM MQ", "Java 17", "Spring Boot", "Kubernetes" ,"Streaming", "Apache Spark"]
+      },
+      {
+        name: t('experience.transactis.project3.name'),
+        description: t('experience.transactis.project3.description'),
+        technologies: ["Kafka", "Java 17", "Spring Boot", "Kubernetes", "S3", "IBM MQ"]
+      },
+    ],
+    team: t('experience.transactis.team'),
+    location: "Paris, France"
+  },
+  {
+    id: 2,
+    title: t('experience.colas.title'),
+    company: "ZSoft | Colas",
+    period: "September 2022 - June 2023",
+    description: t('experience.colas.description'),
+    skills: ["Java", "Angular", "Spring Boot", "CRM", "Data Migration", "REST APIs"],
+    achievements: [
+      t('experience.colas.achievement1'),
+      t('experience.colas.achievement2'),
+      t('experience.colas.achievement3')
+    ],
+    projects: [
+      {
+        name: t('experience.colas.project1.name'),
+        description: t('experience.colas.project1.description'),
+        technologies: ["Java", "Angular", "CRM"]
+      }
+    ],
+    team: t('experience.colas.team'),
+    location: "Paris, France"
+  },
+  {
+    id: 3,
+    title: t('experience.datama.title'),
+    company: "Datama",
+    period: "February 2021 - September 2022",
+    description: t('experience.datama.description'),
+    skills: ["VueJs","Python3", "Fullstack Development", "Data Analytics", "Web Platform"],
+    achievements: [],
+    projects: [
+      {
+        name: t('experience.datama.project1.name'),
+        description: t('experience.datama.project1.description'),
+        technologies: ["Web Platform", "Data Processing"]
+      }
+    ],
+    team: t('experience.datama.team'),
+    location: "Paris, France"
+  },
+  {
+    id: 3,
+    title: t('experience.wings.title'),
+    company: "Datama",
+    period: "February 2021 - September 2022",
+    description: t('experience.datama.description'),
+    skills: ["VueJs","Python3", "Fullstack Development", "Data Analytics", "Web Platform"],
+    achievements: [],
+    projects: [
+      {
+        name: t('experience.datama.project1.name'),
+        description: t('experience.datama.project1.description'),
+        technologies: ["Web Platform", "Data Processing"]
+      }
+    ],
+    team: t('experience.datama.team'),
+    location: "Paris, France"
+  }
+];
 
   const experienceData = getExperienceData();
 

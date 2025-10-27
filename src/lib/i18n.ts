@@ -201,7 +201,7 @@ export const translations: Translations = {
     en: 'Expert design and development of scalable, high-performance distributed apps across web, mobile, and backend systems. Expertise in Java, Go, React, and other modern frameworks to deliver robust, maintainable solutions aligned with business goals.',
     fr: 'Conception et développement expert d\'applications distribuées évolutives et hautes performances pour le web, le mobile et les systèmes backend. Expertise en Java, Go, React et autres frameworks modernes pour fournir des solutions robustes et maintenables alignées sur les objectifs métier.'
   },
-  'services.secTest.title': {
+  'services.security.title': {
     en: 'Security & Compliance',
     fr: 'Sécurité & Conformité'
   },
@@ -230,8 +230,8 @@ export const translations: Translations = {
     fr: 'Microservices & APIs'
   },
   'services.APIs.description': {
-    en: 'Design and development of resilient, cloud-native microservices and enterprise-grade APIs. Expertise in Spring Boot, Node.js, and .NET Core for backend services, with secure RESTful and GraphQL interfaces. Skilled in containerization with Docker and Kubernetes, service discovery, and API gateways to enable high-performance, scalable distributed systems.',
-    fr: 'Conception et développement de microservices résilients cloud-native et d\'APIs de qualité enterprise. Expertise en Spring Boot, Node.js et .NET Core pour les services backend, avec des interfaces RESTful et GraphQL sécurisées. Compétences en conteneurisation avec Docker et Kubernetes, en découverte de services et en gateways API pour permettre des systèmes distribués hautes performances et évolutifs.'
+    en: 'Designing and architecting cloud-native microservices with a focus on scalable, event-driven communication. Experienced in building robust synchronous and asynchronous API ecosystems that ensure resilience, high availability, and seamless service interaction across distributed systems.',
+    fr: 'Conception et architecture de microservices cloud-native axés sur une communication évolutive et orientée événements. Expérience dans la création d’écosystèmes d’API synchrones et asynchrones, garantissant résilience, haute disponibilité et interaction fluide entre services distribués.'
   },
   'services.consulting.title': {
     en: 'Software Strategy Consulting',
@@ -421,7 +421,7 @@ export const translations: Translations = {
     fr: 'Obtention de multiples certifications professionnelles en technologies cloud, ingénierie des données et gestion de projet.'
   },
   'education.certifications.cert1': {
-    en: 'Google Cloud Associate Data Practitioner',
+    en: 'AWS so',
     fr: 'Google Cloud Associate Data Practitioner'
   },
   'education.certifications.cert2': {
@@ -436,232 +436,150 @@ export const translations: Translations = {
     en: 'Scrum Foundation Professional Certification (SFPC™)',
     fr: 'Certification Professionnelle Scrum Foundation (SFPC™)'
   },
-
-  // Experience Content
-  'experience.alten.title': {
-    en: 'Data & Analytics Engineer',
-    fr: 'Ingénieur Données & Analytics'
+  "experience.transactis.title": {
+    "en": "Backend Java/DevOps Developer",
+    "fr": "Développeur Backend Java/ DevOps"
   },
-  'experience.alten.description': {
-    en: 'Data & Analytics Engineer with dual roles supporting corporate strategy and analytics engineering for major clients like Bouygues Telecom and Renault. Implementing data analysis systems to support strategic decision-making using cloud technologies.',
-    fr: 'Ingénieur Données & Analytics avec double rôle soutenant la stratégie d\'entreprise et l\'ingénierie analytique pour des clients majeurs comme Bouygues Telecom et Renault. Implémentation de systèmes d\'analyse de données pour soutenir la prise de décision stratégique utilisant les technologies cloud.'
+  "experience.transactis.description": {
+    "en": "Backend Java Developer and DevOps engineer working on large-scale banking data flows and secure data lake integrations for major clients (SG, Crédit Agricole, Banque Postale).",
+    "fr": "Développeur Backend Java et ingénieur DevOps travaillant sur des flux bancaires à grande échelle et des intégrations sécurisées de data lakes pour des clients majeurs (SG, Crédit Agricole, Banque Postale)."
   },
-  'experience.alten.achievement1': {
-    en: 'Designed data pipelines using Google Cloud Platform services for efficient data processing',
-    fr: 'Conception de pipelines de données utilisant les services Google Cloud Platform pour un traitement efficace des données'
+  "experience.transactis.achievement1": {
+    "en": "Designed and developed banking flow mapping system handling millions of events per day",
+    "fr": "Conception et développement d’un système de mapping des flux bancaires gérant plusieurs millions d’événements par jour"
   },
-  'experience.alten.achievement2': {
-    en: 'Used BigQuery for complex queries and data analysis, optimizing processing efficiency',
-    fr: 'Utilisation de BigQuery pour des requêtes complexes et l\'analyse de données, optimisant l\'efficacité du traitement'
+  "experience.transactis.achievement2": {
+    "en": "Built microservices with Java Spring Boot for secure and scalable data pipelines",
+    "fr": "Développement de microservices avec Java Spring Boot pour des pipelines de données sécurisés et scalables"
   },
-  'experience.alten.achievement3': {
-    en: 'Developed Power BI dashboards for real-time monitoring of productivity and operational metrics',
-    fr: 'Développement de tableaux de bord Power BI pour le suivi en temps réel de la productivité et des métriques opérationnelles'
+  "experience.transactis.achievement3": {
+    "en": "Implemented messaging services with IBM MQ and RabbitMQ",
+    "fr": "Implémentation de services de messagerie avec IBM MQ et RabbitMQ"
   },
-  'experience.alten.achievement4': {
-    en: 'Implemented real-time data flows with Google Cloud services for continuous data ingestion from Salesforce',
-    fr: 'Implémentation de flux de données en temps réel avec les services Google Cloud pour l\'ingestion continue de données depuis Salesforce'
+  "experience.transactis.achievement4": {
+    "en": "Deployed CI/CD pipelines on Kubernetes with performance testing automation",
+    "fr": "Déploiement de pipelines CI/CD sur Kubernetes avec automatisation des tests de performance"
   },
-  'experience.alten.achievement5': {
-    en: 'Created dynamic reports in Power BI, integrating complex data models for data-driven decisions',
-    fr: 'Création de rapports dynamiques dans Power BI, intégrant des modèles de données complexes pour des décisions basées sur les données'
+  "experience.transactis.achievement5": {
+    "en": "Set up centralized logging with Kafka pipelines and ELK dashboards",
+    "fr": "Mise en place de la gestion centralisée des logs avec des pipelines Kafka et des dashboards ELK"
   },
-  'experience.alten.achievement6': {
-    en: 'Collaborated on market analysis and recruitment process optimization initiatives',
-    fr: 'Collaboration sur l\'analyse de marché et les initiatives d\'optimisation des processus de recrutement'
+  "experience.transactis.project1.name": {
+    "en": "MARS Sentinel",
+    "fr": "MARS Sentinel"
   },
-  'experience.alten.project1.name': {
-    en: 'Corporate & Strategy Analytics',
-    fr: 'Analytique Corporate & Stratégique'
+  "experience.transactis.project1.description": {
+    "en": "Developed a banking flow monitoring system converting IBM MQ streams to JSON format",
+    "fr": "Développement d’un système de monitoring des flux bancaires convertissant les flux IBM MQ en format JSON"
   },
-  'experience.alten.project1.description': {
-    en: 'Implemented data analysis systems using business intelligence tools (Azure, Python, Power Platform) for data automation and reporting',
-    fr: 'Implémentation de systèmes d\'analyse de données utilisant des outils de business intelligence (Azure, Python, Power Platform) pour l\'automatisation des données et le reporting'
+  "experience.transactis.project2.name": {
+    "en": "MARS Datalake",
+    "fr": "MARS Datalake"
   },
-  'experience.alten.project2.name': {
-    en: 'Bouygues Telecom Data Pipelines',
-    fr: 'Pipelines de Données Bouygues Telecom'
+  "experience.transactis.project2.description": {
+    "en": "Built secure file encryption and streaming system for sending terabytes of data to client data lakes (S3)",
+    "fr": "Conception d’un système de chiffrement et d’envoi en streaming de fichiers pour plusieurs To de données vers les data lakes clients (S3)"
   },
-  'experience.alten.project2.description': {
-    en: 'Designed and optimized data pipelines on Google Cloud Platform for efficient data processing and analysis',
-    fr: 'Conception et optimisation de pipelines de données sur Google Cloud Platform pour un traitement et une analyse efficaces des données'
-  },
-  'experience.alten.project3.name': {
-    en: 'Renault Salesforce Integration',
-    fr: 'Intégration Salesforce Renault'
-  },
-  'experience.alten.project3.description': {
-    en: 'Implemented real-time data flows from Salesforce with dynamic Power BI reporting dashboards',
-    fr: 'Implémentation de flux de données en temps réel depuis Salesforce avec des tableaux de bord de reporting Power BI dynamiques'
-  },
-  'experience.alten.team': {
-    en: 'Data & Analytics Team',
-    fr: 'Équipe Données & Analytics'
+  "experience.transactis.team": {
+    "en": "Backend & DevOps Team",
+    "fr": "Équipe Backend & DevOps"
   },
 
-  'experience.ocp.title': {
-    en: 'Data & Analytics Engineer',
-    fr: 'Ingénieur Données & Analytics'
+  "experience.colas.title": {
+    "en": "Fullstack Java/Angular Developer",
+    "fr": "Développeur Fullstack Java/Angular"
   },
-  'experience.ocp.description': {
-    en: 'Developed a generic framework for machine learning techniques, with a focus on multilingual summary models. Implemented NLP solutions and integrated AI features with web applications.',
-    fr: 'Développement d\'un framework générique pour les techniques d\'apprentissage automatique, avec un focus sur les modèles de résumé multilingues. Implémentation de solutions NLP et intégration de fonctionnalités IA avec des applications web.'
+  "experience.colas.description": {
+    "en": "Developed a global CRM for Colas commercial teams across 55 countries, managing workflows, permissions, and data migration.",
+    "fr": "Développement d’un CRM global pour les équipes commerciales de Colas dans 55 pays, gestion des workflows, des permissions et migration de données."
   },
-  'experience.ocp.achievement1': {
-    en: 'Developed a generic framework for machine learning techniques, including multilingual summary models',
-    fr: 'Développement d\'un framework générique pour les techniques d\'apprentissage automatique, incluant des modèles de résumé multilingues'
+  "experience.colas.achievement1": {
+    "en": "Designed and implemented hierarchical access permissions",
+    "fr": "Conception et implémentation des permissions d’accès hiérarchiques"
   },
-  'experience.ocp.achievement2': {
-    en: 'Deployed NLP models using Hugging Face and PyTorch for automatic text summarization',
-    fr: 'Déploiement de modèles NLP utilisant Hugging Face et PyTorch pour la synthèse automatique de texte'
+  "experience.colas.achievement2": {
+    "en": "Developed RESTful APIs with Spring Boot",
+    "fr": "Développement d’APIs REST avec Spring Boot"
   },
-  'experience.ocp.achievement3': {
-    en: 'Integrated APIs with Flask to add AI features to interactive web applications',
-    fr: 'Intégration d\'APIs avec Flask pour ajouter des fonctionnalités IA aux applications web interactives'
+  "experience.colas.achievement3": {
+    "en": "Migrated data from legacy applications into the new CRM",
+    "fr": "Migration de données depuis les anciennes applications vers le nouveau CRM"
   },
-  'experience.ocp.achievement4': {
-    en: 'Worked with document processing pipelines using Elasticsearch and Parquet for efficient data storage',
-    fr: 'Travail avec des pipelines de traitement de documents utilisant Elasticsearch et Parquet pour un stockage efficace des données'
+  "experience.colas.project1.name": {
+    "en": "Global CRM",
+    "fr": "CRM Global"
   },
-  'experience.ocp.achievement5': {
-    en: 'Implemented full-stack solutions connecting ML models with front-end interfaces',
-    fr: 'Implémentation de solutions full-stack connectant les modèles ML avec les interfaces front-end'
+  "experience.colas.project1.description": {
+    "en": "CRM platform for managing global commercial activities across 55 countries",
+    "fr": "Plateforme CRM pour gérer l’activité commerciale mondiale sur 55 pays"
   },
-  'experience.ocp.project1.name': {
-    en: 'Multilingual Text Summarization',
-    fr: 'Synthèse de Texte Multilingue'
-  },
-  'experience.ocp.project1.description': {
-    en: 'Developed and deployed NLP models for automatic multilingual text summarization',
-    fr: 'Développement et déploiement de modèles NLP pour la synthèse automatique de texte multilingue'
-  },
-  'experience.ocp.project2.name': {
-    en: 'AI Web Integration',
-    fr: 'Intégration Web IA'
-  },
-  'experience.ocp.project2.description': {
-    en: 'Integrated machine learning models with web applications through REST APIs',
-    fr: 'Intégration de modèles d\'apprentissage automatique avec des applications web via des APIs REST'
-  },
-  'experience.ocp.project3.name': {
-    en: 'Document Processing Pipeline',
-    fr: 'Pipeline de Traitement de Documents'
-  },
-  'experience.ocp.project3.description': {
-    en: 'Created data processing pipeline for document storage and retrieval',
-    fr: 'Création d\'un pipeline de traitement de données pour le stockage et la récupération de documents'
-  },
-  'experience.ocp.team': {
-    en: 'AI & Machine Learning Team',
-    fr: 'Équipe IA & Apprentissage Automatique'
+  "experience.colas.team": {
+    "en": "CRM Development Team",
+    "fr": "Équipe Développement CRM"
   },
 
-  'experience.1mweb.title': {
-    en: 'Data Scientist',
-    fr: 'Data Scientist'
+  "experience.datama.title": {
+    "en": "Fullstack Data Developer",
+    "fr": "Développeur Data Fullstack"
   },
-  'experience.1mweb.description': {
-    en: 'Developed a machine learning model for automatic CV information extraction. Leveraged NLP libraries for CV data analysis and extraction, automated workflows for parallel CV processing.',
-    fr: 'Développement d\'un modèle d\'apprentissage automatique pour l\'extraction automatique d\'informations de CV. Utilisation de bibliothèques NLP pour l\'analyse et l\'extraction de données de CV, automatisation des workflows pour le traitement parallèle de CV.'
+  "experience.datama.description": {
+    "en": "Developed a web platform providing analysts with tools for data preparation and metric-driven insights.",
+    "fr": "Développement d’une plateforme web fournissant aux analystes des outils de préparation de données et d’insights orientés métriques."
   },
-  'experience.1mweb.achievement1': {
-    en: 'Developed a machine learning model for automatic CV information extraction',
-    fr: 'Développement d\'un modèle d\'apprentissage automatique pour l\'extraction automatique d\'informations de CV'
+  "experience.datama.project1.name": {
+    "en": "Data Analytics Platform",
+    "fr": "Plateforme d’Analyse de Données"
   },
-  'experience.1mweb.achievement2': {
-    en: 'Leveraged NLP libraries (NLTK, SpaCy, TextBlob) for CV data analysis and extraction',
-    fr: 'Utilisation de bibliothèques NLP (NLTK, SpaCy, TextBlob) pour l\'analyse et l\'extraction de données de CV'
+  "experience.datama.project1.description": {
+    "en": "Web platform enabling analysts to process data and generate insights",
+    "fr": "Plateforme web permettant aux analystes de traiter les données et générer des insights"
   },
-  'experience.1mweb.achievement3': {
-    en: 'Automated workflows using Apache Airflow for parallel CV processing',
-    fr: 'Automatisation des workflows utilisant Apache Airflow pour le traitement parallèle de CV'
-  },
-  'experience.1mweb.achievement4': {
-    en: 'Worked in an Agile environment to integrate models into existing systems',
-    fr: 'Travail dans un environnement Agile pour intégrer les modèles dans les systèmes existants'
-  },
-  'experience.1mweb.achievement5': {
-    en: 'Enhanced recruitment processes through AI-powered document analysis',
-    fr: 'Amélioration des processus de recrutement grâce à l\'analyse de documents alimentée par l\'IA'
-  },
-  'experience.1mweb.project1.name': {
-    en: 'CV Information Extraction',
-    fr: 'Extraction d\'Informations de CV'
-  },
-  'experience.1mweb.project1.description': {
-    en: 'ML-powered system to automatically extract structured data from CVs and resumes',
-    fr: 'Système alimenté par ML pour extraire automatiquement des données structurées des CV'
-  },
-  'experience.1mweb.project2.name': {
-    en: 'Workflow Automation',
-    fr: 'Automatisation des Workflows'
-  },
-  'experience.1mweb.project2.description': {
-    en: 'Parallel processing system for CV analysis using Apache Airflow',
-    fr: 'Système de traitement parallèle pour l\'analyse de CV utilisant Apache Airflow'
-  },
-  'experience.1mweb.team': {
-    en: 'Data Science Team',
-    fr: 'Équipe Data Science'
+  "experience.datama.team": {
+    "en": "Data Development Team",
+    "fr": "Équipe Développement Data"
   },
 
-  'experience.ispits.title': {
-    en: 'Data Scientist',
-    fr: 'Data Scientist'
+  "experience.wings.title": {
+    "en": "Fullstack Java/Angular Developer",
+    "fr": "Développeur Fullstack Java/Angular"
   },
-  'experience.ispits.description': {
-    en: 'Designed and developed a mobile app with Java and Android Studio for monitoring smartphone usage. Built a Flask backend for managing app data and implemented real-time notifications.',
-    fr: 'Conception et développement d\'une application mobile avec Java et Android Studio pour surveiller l\'utilisation des smartphones. Construction d\'un backend Flask pour gérer les données de l\'application et implémentation de notifications en temps réel.'
+  "experience.wings.description": {
+    "en": "Developed a compliance auditing web application with advanced authentication, dynamic permissions, and API security.",
+    "fr": "Développement d’une application web d’audit de conformité avec authentification avancée, permissions dynamiques et sécurité API."
   },
-  'experience.ispits.achievement1': {
-    en: 'Designed and developed a mobile app with Java and Android Studio for monitoring smartphone usage',
-    fr: 'Conception et développement d\'une application mobile avec Java et Android Studio pour surveiller l\'utilisation des smartphones'
-  },
-  'experience.ispits.achievement2': {
-    en: 'Built a Flask backend for managing app data, user sessions, and frontend-server communication',
-    fr: 'Construction d\'un backend Flask pour gérer les données de l\'application, les sessions utilisateur et la communication frontend-serveur'
-  },
-  'experience.ispits.achievement3': {
-    en: 'Implemented real-time notifications to alert users of risky behaviors',
-    fr: 'Implémentation de notifications en temps réel pour alerter les utilisateurs de comportements à risque'
-  },
-  'experience.ispits.achievement4': {
-    en: 'Created UI/UX designs using Figma for intuitive user experience',
-    fr: 'Création de designs UI/UX utilisant Figma pour une expérience utilisateur intuitive'
-  },
-  'experience.ispits.achievement5': {
-    en: 'Integrated data collection and analysis components for usage pattern detection',
-    fr: 'Intégration de composants de collecte et d\'analyse de données pour la détection de modèles d\'utilisation'
-  },
-  'experience.ispits.project1.name': {
-    en: 'Smartphone Usage Monitor',
-    fr: 'Moniteur d\'Utilisation de Smartphone'
-  },
-  'experience.ispits.project1.description': {
-    en: 'Mobile application for tracking and analyzing smartphone usage patterns',
-    fr: 'Application mobile pour suivre et analyser les modèles d\'utilisation des smartphones'
-  },
-  'experience.ispits.project2.name': {
-    en: 'App Backend System',
-    fr: 'Système Backend d\'Application'
-  },
-  'experience.ispits.project2.description': {
-    en: 'Server-side application for data storage, analysis, and user management',
-    fr: 'Application côté serveur pour le stockage de données, l\'analyse et la gestion des utilisateurs'
-  },
-  'experience.ispits.project3.name': {
-    en: 'UI/UX Design',
-    fr: 'Design UI/UX'
-  },
-  'experience.ispits.project3.description': {
-    en: 'Design of intuitive user interfaces and experiences for mobile application',
-    fr: 'Conception d\'interfaces utilisateur et d\'expériences intuitives pour application mobile'
-  },
-  'experience.ispits.team': {
-    en: 'Mobile Development Team',
-    fr: 'Équipe de Développement Mobile'
+  "experience.wings.team": {
+    "en": "Compliance Development Team",
+    "fr": "Équipe Développement Conformité"
   },
 
+  "experience.advisoris.title": {
+    "en": "Fullstack Java/Angular Developer",
+    "fr": "Développeur Fullstack Java/Angular"
+  },
+  "experience.advisoris.description": {
+    "en": "Developed secure file-sharing applications and an e-commerce site for used car sales.",
+    "fr": "Développement d’applications sécurisées de partage de fichiers et d’un site e-commerce pour la vente de voitures d’occasion."
+  },
+  "experience.advisoris.project1.name": {
+    "en": "Secure File Sharing Platform",
+    "fr": "Plateforme de Partage de Fichiers Sécurisée"
+  },
+  "experience.advisoris.project1.description": {
+    "en": "Web app enabling secure client file sharing",
+    "fr": "Application web facilitant le partage de fichiers sécurisés avec les clients"
+  },
+  "experience.advisoris.project2.name": {
+    "en": "Used Cars E-commerce",
+    "fr": "E-commerce Voitures d’Occasion"
+  },
+  "experience.advisoris.project2.description": {
+    "en": "E-commerce website for buying and selling used cars",
+    "fr": "Site e-commerce pour l’achat et la vente de voitures d’occasion"
+  },
+  "experience.advisoris.team": {
+    "en": "Fullstack Development Team",
+    "fr": "Équipe Développement Fullstack"
+  },
   // Common elements
   'common.filter': {
     en: 'Filter',

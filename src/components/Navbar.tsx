@@ -73,7 +73,7 @@ export default function Navbar() {
               transition={{ duration: 0.5 }}
               className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent"
             >
-              Portfolio
+              OD
             </motion.span>
           </Link>
 
