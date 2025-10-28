@@ -441,8 +441,8 @@ export const translations: Translations = {
     "fr": "Développeur Backend Java/ DevOps"
   },
   "experience.transactis.description": {
-    "en": "Backend Java Developer and DevOps engineer working on large-scale banking data flows and secure data lake integrations for major clients (SG, Crédit Agricole, Banque Postale).",
-    "fr": "Développeur Backend Java et ingénieur DevOps travaillant sur des flux bancaires à grande échelle et des intégrations sécurisées de data lakes pour des clients majeurs (SG, Crédit Agricole, Banque Postale)."
+    "en": "Backend Java Developer and DevOps engineer working on large-scale banking data flows and secure data lake integrations for major clients (SG, Boursorama, Banque Postale).",
+    "fr": "Développeur Backend Java et ingénieur DevOps travaillant sur des flux bancaires à grande échelle et des intégrations sécurisées de data lakes pour des clients majeurs (SG, Boursorama, Banque Postale)."
   },
   "experience.transactis.achievement1": {
     "en": "Designed and developed banking flow mapping system handling millions of events per day",
@@ -455,6 +455,10 @@ export const translations: Translations = {
   "experience.transactis.achievement3": {
     "en": "Implemented messaging services with IBM MQ and RabbitMQ",
     "fr": "Implémentation de services de messagerie avec IBM MQ et RabbitMQ"
+  },
+  "experience.transactis.achievement4": {
+    "en": "Built a secure, event-driven Kafka VOP system with SSL/SCRAM, monitoring and S3 archiving.",
+    "fr": "Développé un système Kafka VOP sécurisé et event-driven avec SSL/SCRAM, monitoring et archivage S3."
   },
   "experience.transactis.achievement4": {
     "en": "Deployed CI/CD pipelines on Kubernetes with performance testing automation",
@@ -480,6 +484,22 @@ export const translations: Translations = {
     "en": "Built secure file encryption and streaming system for sending terabytes of data to client data lakes (S3)",
     "fr": "Conception d’un système de chiffrement et d’envoi en streaming de fichiers pour plusieurs To de données vers les data lakes clients (S3)"
   },
+  "experience.transactis.project3.name": {
+    "en": "Kafka VOP/ Verification of payee",
+    "fr": "Kafka VOP/ Verification of payee"
+  },
+  "experience.transactis.project3.description": {
+    "en": `Kafka VOP (Verification of Payee) is an event-driven microservice system that validates
+    bank account ownership before payments. It uses Apache Kafka for real-time processing, secured with SSL encryption
+    and SCRAM authentication to protect data in transit and ensure secure access. The system is monitored through the
+    ELK Stack and Prometheus, with Kafka UI for topic management. An integrated ETL process archives Kafka events to
+    S3 for analytics and compliance.`,
+    "fr": `Kafka VOP (Verification of Payee) est un système de microservices orienté événements qui valide la propriété
+    des comptes bancaires avant les paiements. Il utilise Apache Kafka pour le traitement en temps réel, sécurisé par le
+    chiffrement SSL et l’authentification SCRAM afin de protéger les données en transit et garantir un accès sécurisé.
+    Le système est surveillé via la pile ELK et Prometheus, avec une interface Kafka UI pour la gestion des topics.
+    Un processus ETL intégré archive les événements Kafka dans S3 pour l’analyse et la conformité.`
+   },
   "experience.transactis.team": {
     "en": "Backend & DevOps Team",
     "fr": "Équipe Backend & DevOps"
@@ -505,17 +525,9 @@ export const translations: Translations = {
     "en": "Migrated data from legacy applications into the new CRM",
     "fr": "Migration de données depuis les anciennes applications vers le nouveau CRM"
   },
-  "experience.colas.project1.name": {
-    "en": "Global CRM",
-    "fr": "CRM Global"
-  },
-  "experience.colas.project1.description": {
-    "en": "CRM platform for managing global commercial activities across 55 countries",
-    "fr": "Plateforme CRM pour gérer l’activité commerciale mondiale sur 55 pays"
-  },
   "experience.colas.team": {
-    "en": "CRM Development Team",
-    "fr": "Équipe Développement CRM"
+    "en": "Backend & Frontend Team",
+    "fr": "Équipe Backend & Frontend"
   },
 
   "experience.datama.title": {

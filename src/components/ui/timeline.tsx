@@ -63,7 +63,7 @@ export function TimelineItem({
 
       {/* Content container */}
       <div
-        className={`flex-1 ${isLeft ? "md:text-right md:pr-8" : "md:pl-8"}`}
+        className={`flex-1 mt-4 mb-4 ${isLeft ? "md:text-left md:pr-8" : "md:pl-8"}`}
         onClick={onClick}
       >
         <motion.div

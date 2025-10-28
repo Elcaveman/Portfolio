@@ -27,7 +27,7 @@ export default function ExperienceTimelineSection() {
     company: "Transactis",
     period: "June 2023 - Present",
     description: t('experience.transactis.description'),
-    skills: ["Java", "Spring Boot", "Kubernetes", "IBM MQ", "Golang", "RabbitMQ", "Kafka", "ELK"],
+    skills: ["Java", "Spring Boot","React", "Kubernetes", "IBM MQ", "Golang", "RabbitMQ", "Kafka", "ELK", "S3", "MongoDB","Rest API"],
     achievements: [
       t('experience.transactis.achievement1'),
       t('experience.transactis.achievement2'),
@@ -37,6 +37,11 @@ export default function ExperienceTimelineSection() {
     ],
     projects: [
       {
+        name: t('experience.transactis.project3.name'),
+        description: t('experience.transactis.project3.description'),
+        technologies: ["Kafka", "Kafka-connect","Java 17", "Spring Boot", "Kubernetes", "Terraform", "S3", "IBM MQ"]
+      },
+      {
         name: t('experience.transactis.project1.name'),
         description: t('experience.transactis.project1.description'),
         technologies: ["IBM MQ", "Java 17", "Spring Boot", "Kubernetes", "RabbitMQ"]
@@ -45,12 +50,7 @@ export default function ExperienceTimelineSection() {
         name: t('experience.transactis.project2.name'),
         description: t('experience.transactis.project2.description'),
         technologies: ["S3", "AES Encryption","IBM MQ", "Java 17", "Spring Boot", "Kubernetes" ,"Streaming", "Apache Spark"]
-      },
-      {
-        name: t('experience.transactis.project3.name'),
-        description: t('experience.transactis.project3.description'),
-        technologies: ["Kafka", "Java 17", "Spring Boot", "Kubernetes", "S3", "IBM MQ"]
-      },
+      }
     ],
     team: t('experience.transactis.team'),
     location: "Paris, France"
@@ -61,19 +61,13 @@ export default function ExperienceTimelineSection() {
     company: "ZSoft | Colas",
     period: "September 2022 - June 2023",
     description: t('experience.colas.description'),
-    skills: ["Java", "Angular", "Spring Boot", "CRM", "Data Migration", "REST APIs"],
+    skills: ["Java", "Angular", "Spring Boot", "Hibernate", "Data Migration","PostgreSQL", "Docker", "EC2" ,"REST APIs"],
     achievements: [
       t('experience.colas.achievement1'),
       t('experience.colas.achievement2'),
       t('experience.colas.achievement3')
     ],
-    projects: [
-      {
-        name: t('experience.colas.project1.name'),
-        description: t('experience.colas.project1.description'),
-        technologies: ["Java", "Angular", "CRM"]
-      }
-    ],
+    projects: [],
     team: t('experience.colas.team'),
     location: "Paris, France"
   },
@@ -81,37 +75,49 @@ export default function ExperienceTimelineSection() {
     id: 3,
     title: t('experience.datama.title'),
     company: "Datama",
-    period: "February 2021 - September 2022",
+    period: "January 2022 - September 2022",
     description: t('experience.datama.description'),
-    skills: ["VueJs","Python3", "Fullstack Development", "Data Analytics", "Web Platform"],
+    skills: ["VueJs","Python3", "Fullstack Development", "GCP", "Big Query", "Data Analytics", "Web Platform"],
     achievements: [],
-    projects: [
-      {
-        name: t('experience.datama.project1.name'),
-        description: t('experience.datama.project1.description'),
-        technologies: ["Web Platform", "Data Processing"]
-      }
-    ],
+    projects: [],
     team: t('experience.datama.team'),
     location: "Paris, France"
   },
   {
-    id: 3,
+    id: 4,
     title: t('experience.wings.title'),
-    company: "Datama",
-    period: "February 2021 - September 2022",
-    description: t('experience.datama.description'),
-    skills: ["VueJs","Python3", "Fullstack Development", "Data Analytics", "Web Platform"],
+    company: "Wings Technologies",
+    period: "June 2021 - Novembre 2021",
+    description: t('experience.wings.description'),
+    skills: ["Java", "Spring boot", "Spring Security", "JWT", "Swagger", "REST API", "PostgreSql" ],
+    achievements: [],
+    projects: [],
+    team: t('experience.wings.team'),
+    location: "Casablanca, Maroc"
+  },
+  {
+    id: 5,
+    title: t('experience.advisoris.title'),
+    company: "Advisoris",
+    period: "June 2020 - September 2020",
+    description: t('experience.advisoris.description'),
+    skills: ["Java","Python3","Django", "Angular", "Spring boot", "Spring Security",
+        "JWT", "Swagger", "REST API", "PostgreSql", "EC2", "S3"],
     achievements: [],
     projects: [
       {
-        name: t('experience.datama.project1.name'),
-        description: t('experience.datama.project1.description'),
-        technologies: ["Web Platform", "Data Processing"]
+        name: t('experience.advisoris.project1.name'),
+        description: t('experience.advisoris.project1.description'),
+        technologies: ["Python3","Django","EC2", "S3", "PostgreSql"]
+      },
+      {
+        name: t('experience.advisoris.project2.name'),
+        description: t('experience.advisoris.project1.description'),
+        technologies: ["Java","Spring boot","Angular","EC2", "S3"]
       }
     ],
-    team: t('experience.datama.team'),
-    location: "Paris, France"
+    team: t('experience.advisoris.team'),
+    location: "Casablanca, Maroc"
   }
 ];
 
@@ -196,7 +202,7 @@ export default function ExperienceTimelineSection() {
                         <Award className="h-4 w-4 mr-1.5" /> {t('common.keyAchievements', 'Key Achievements')}
                       </h4>
                       <ul className="space-y-2">
-                        {experience.achievements.slice(0, 3).map((achievement, i) => (
+                        {experience.achievements.slice(0, 4).map((achievement, i) => (
                           <motion.li
                             key={i}
                             className="flex items-start gap-2"
@@ -214,7 +220,7 @@ export default function ExperienceTimelineSection() {
                     </div>
 
                     {/* Projects Section */}
-                    <div>
+                    {experience.projects?.length > 0? ( <div>
                       <div
                         className="flex justify-between items-center cursor-pointer mb-3"
                         onClick={toggleProjects}
@@ -242,7 +248,6 @@ export default function ExperienceTimelineSection() {
                                 transition={{ duration: 0.3, delay: 0.2 + idx * 0.1 }}
                               >
                                 <h5 className="font-medium text-primary flex items-center">
-                                  <Link className="h-3.5 w-3.5 mr-1.5" />
                                   {project.name}
                                 </h5>
                                 <p className="text-sm mt-1 text-foreground/70">
@@ -277,8 +282,7 @@ export default function ExperienceTimelineSection() {
                           <ChevronDown className="h-3 w-3 ml-1" />
                         </motion.button>
                       )}
-                    </div>
-
+                    </div> ):(<div></div>)}
                     {/* Team Information */}
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Users className="h-4 w-4 text-primary/70" />

@@ -12,7 +12,7 @@ const socialLinks = [
   // },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/oussama-shait-580653255/",
+    url: "https://www.linkedin.com/in/el-mehdi-oudaoud/",
     icon: <Linkedin className="w-5 h-5" />
   },
   // {
