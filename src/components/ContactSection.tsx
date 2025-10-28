@@ -92,9 +92,9 @@ export default function ContactSection() {
 
   // Contact information
   const contactInfo = {
-    email: "oussama.seth22@gmail.com",
-    phone: "(+212) 6 63 82 12 68",
-    location: "Casablanca, Morocco"
+    email: "02.oudaoud@gmail.com",
+    phone: "(+33) 7 49 78 79 35",
+    location: "Paris, France"
   };
 
   return (
@@ -179,8 +179,7 @@ export default function ContactSection() {
                 viewport={{ once: true }}
               >
                 <iframe
-                  src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157626.07368593992!2d-7.742877822670783!3d33.57218979480196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Morocco!5e1!3m2!1sen!2sus!4v1743013783566!5m2!1sen!2sus"
-                  // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.64881847406!2d-122.45194559519766!3d37.773238887489005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1648144021686!5m2!1sen!2sus"
+                  src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.77836691822!2d2.264461977928219!3d48.85893836240145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sen!2sfr!4v1761615406501!5m2!1sen!2sfr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

@@ -108,7 +108,7 @@ export default function HeroSection() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <a
-                    href="/resume.pdf"
+                    href="/resume-fr.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

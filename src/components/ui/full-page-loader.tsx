@@ -28,7 +28,7 @@ export default function FullPageLoader({
         <div className="w-32 h-32 rounded-full border-4 border-transparent bg-gradient-to-r from-indigo-500 to-purple-500 p-[3px] animate-spin-slow">
           <div className="w-full h-full rounded-full bg-[#0d0f1a] flex items-center justify-center">
             <span className="w-20 h-20 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white font-bold text-xl">
-              MD
+              <img src="logo.png"></img>
             </span>
           </div>
         </div>

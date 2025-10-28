@@ -421,18 +421,14 @@ export const translations: Translations = {
     fr: 'Obtention de multiples certifications professionnelles en technologies cloud, ingénierie des données et gestion de projet.'
   },
   'education.certifications.cert1': {
-    en: 'AWS so',
-    fr: 'Google Cloud Associate Data Practitioner'
+    en: 'AWS Solution Architect',
+    fr: 'AWS Solution Architect'
   },
   'education.certifications.cert2': {
-    en: 'Astronomer Certification for Apache Airflow Fundamentals',
-    fr: 'Certification Astronomer pour les Fondamentaux d\'Apache Airflow'
+    en: 'AWS Cloud Practitioner',
+    fr: 'AWS Cloud Practitioner'
   },
   'education.certifications.cert3': {
-    en: 'Databricks Lakehouse Fundamentals',
-    fr: 'Fondamentaux Databricks Lakehouse'
-  },
-  'education.certifications.cert4': {
     en: 'Scrum Foundation Professional Certification (SFPC™)',
     fr: 'Certification Professionnelle Scrum Foundation (SFPC™)'
   },

@@ -39,7 +39,9 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-muted-foreground mb-4 md:mb-0">
-            © {currentYear} <span className="text-primary">Oussama SHAIT</span>. All rights reserved.
+            © {currentYear} <span className="text-primary">El Mehdi OUDAOUD</span>. Absolutely no rights reserved. Feel
+            free to use <span className="text-primary"><a href="https://github.com/Elcaveman/Portfolio">this template</a>
+            </span>.
           </div>
 
           <div className="flex space-x-4">

@@ -67,13 +67,14 @@ export default function Navbar() {
         <nav className="flex justify-between items-center">
           {/* Logo */}
           <Link href="#home" className="text-xl md:text-2xl font-bold">
+
             <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent"
             >
-              OD
+                <img src="logo.png" width="72px"></img>
             </motion.span>
           </Link>
 
@@ -99,7 +100,7 @@ export default function Navbar() {
                 className="mr-3"
               >
                 <a
-                  href="/resume.pdf"
+                  href="/resume-fr.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -174,7 +175,7 @@ export default function Navbar() {
                     className="w-full"
                   >
                     <a
-                      href="/resume.pdf"
+                      href="/resume-fr.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
