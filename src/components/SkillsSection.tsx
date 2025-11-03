@@ -22,322 +22,228 @@ interface Skill {
 
 // Adding skill levels and tags to the existing skills data
 const skillCategories = [
-  {
-    id: "programming",
-    label: "Programming",
-    skills: [
-      {
-        name: "Python",
-        description: "Data Processing & Machine Learning",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-        level: "expert" as SkillLevel,
-        tags: ["data", "ml", "backend"]
-      },
-      {
-        name: "Java",
-        description: "Application Development",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["backend", "mobile"]
-      },
-      {
-        name: "JavaScript",
-        description: "Web Development & Frontend",
-        icon: "https://ext.same-assets.com/2803063555/2631936918.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["frontend", "web"]
-      },
-      {
-        name: "SQL",
-        description: "Database Queries & Data Management",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
-        level: "expert" as SkillLevel,
-        tags: ["data", "database"]
-      },
-      {
-        name: "PL/SQL",
-        description: "Procedural Language Extensions",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-plain.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["data", "database"]
-      },
-      {
-        name: "Scala",
-        description: "Functional Programming & Big Data",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scala/scala-original.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["data", "backend"]
-      }
-    ],
-  },
-  {
-    id: "web-frameworks",
-    label: "Web Frameworks",
-    skills: [
-      {
-        name: "Next.js",
-        description: "React Framework for Web Apps",
-        icon: "https://ext.same-assets.com/2803063555/2631654787.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["frontend", "web"]
-      },
-      {
-        name: "Flask",
-        description: "Python Web Framework",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["backend", "web", "api"]
-      },
-      {
-        name: "Django",
-        description: "High-level Python Framework",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["backend", "web"]
-      },
-      {
-        name: "FastAPI",
-        description: "Modern API Framework",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["api", "backend"]
-      },
-      {
-        name: "GraphQL",
-        description: "API Query Language",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["api", "data"]
-      }
-    ]
-  },
-  {
-    id: "data-processing",
-    label: "Data Processing",
-    skills: [
-      {
-        name: "Apache Spark",
-        description: "Distributed Computing Engine",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["big data", "processing"]
-      },
-      {
-        name: "Apache Airflow",
-        description: "Workflow Orchestration",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["automation", "workflows"]
-      },
-      {
-        name: "BigQuery",
-        description: "Cloud Data Warehouse",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-        level: "expert" as SkillLevel,
-        tags: ["data", "cloud", "analytics"]
-      },
-      {
-        name: "Apache Beam",
-        description: "Data Processing Pipelines",
-        icon: "https://miro.medium.com/v2/resize:fit:400/1*3JeGCUCbGxTkkIMPEjoPFw.png",
-        level: "intermediate" as SkillLevel,
-        tags: ["data", "processing"]
-      },
-      {
-        name: "Hadoop",
-        description: "Distributed Storage & Processing",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["big data", "storage"]
-      },
-      {
-        name: "Kafka",
-        description: "Event Streaming Platform",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["streaming", "messaging"]
-      }
-    ]
-  },
-  {
-    id: "cloud",
-    label: "Cloud",
-    skills: [
-      {
-        name: "Google Cloud Platform",
-        description: "Cloud Computing Services",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-        level: "expert" as SkillLevel,
-        tags: ["cloud", "infrastructure"]
-      },
-      {
-        name: "Azure",
-        description: "Microsoft Cloud Platform",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["cloud", "infrastructure"]
-      },
-      {
-        name: "Kubernetes",
-        description: "Container Orchestration",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["orchestration", "containers"]
-      },
-      {
-        name: "Terraform",
-        description: "Infrastructure as Code",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["iac", "devops"]
-      },
-      {
-        name: "Docker",
-        description: "Containerization Platform",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["containers", "devops"]
-      }
-    ]
-  },
-  {
-    id: "databases",
-    label: "Databases",
-    skills: [
-      {
-        name: "MongoDB",
-        description: "NoSQL Database",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["nosql", "database"]
-      },
-      {
-        name: "MySQL",
-        description: "Relational Database",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["sql", "database"]
-      },
-      {
-        name: "PostgreSQL",
-        description: "Advanced Relational Database",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-        level: "expert" as SkillLevel,
-        tags: ["sql", "database"]
-      },
-      {
-        name: "Elasticsearch",
-        description: "Search & Analytics Engine",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elasticsearch/elasticsearch-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["search", "analytics"]
-      }
-    ]
-  },
-  {
-    id: "ml-ai",
-    label: "ML & AI",
-    skills: [
-      {
-        name: "Hugging Face",
-        description: "NLP & Machine Learning Models",
-        icon: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["ml", "nlp"]
-      },
-      {
-        name: "PyTorch",
-        description: "Deep Learning Framework",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["ml", "deep learning"]
-      },
-      {
-        name: "TensorFlow",
-        description: "Machine Learning Platform",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["ml", "deep learning"]
-      },
-      {
-        name: "Generative AI",
-        description: "Content Generation & LLMs",
-        icon: "https://cdn-icons-png.flaticon.com/512/8637/8637114.png",
-        level: "intermediate" as SkillLevel,
-        tags: ["ai", "llm"]
-      },
-      // {
-      //   name: "NLTK",
-      //   description: "Natural Language Processing",
-      //   icon: "https://miro.medium.com/v2/resize:fit:592/1*YM2HXc7f4v02pZBEO8h-fw.png",
-      //   level: "advanced" as SkillLevel,
-      //   tags: ["nlp", "text"]
-      // },
-      // {
-      //   name: "SpaCy",
-      //   description: "Advanced NLP Library",
-      //   icon: "https://spacy.io/static/icon-dark.svg",
-      //   level: "advanced" as SkillLevel,
-      //   tags: ["nlp", "text"]
-      // }
-    ]
-  },
-  {
-    id: "tools",
-    label: "Tools & Others",
-    skills: [
-      {
-        name: "Power BI",
-        description: "Business Intelligence & Visualization",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powerbi/powerbi-original.svg",
-        level: "expert" as SkillLevel,
-        tags: ["visualization", "analytics"]
-      },
-      {
-        name: "Power Apps",
-        description: "Low-Code Development Platform",
-        icon: "https://static.wikia.nocookie.net/logopedia/images/4/44/Microsoft_Power_Apps_%282020%29.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["low-code", "apps"]
-      },
-      {
-        name: "Power Automate",
-        description: "Workflow Automation",
-        icon: "https://static.wikia.nocookie.net/logopedia/images/1/11/Microsoft_Power_Automate_%282020%29.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["automation", "workflow"]
-      },
-      {
-        name: "Dataverse",
-        description: "Data Storage & Management",
-        icon: "https://static.wikia.nocookie.net/logopedia/images/c/cf/Microsoft_Dataverse_%282020%29.svg",
-        level: "intermediate" as SkillLevel,
-        tags: ["data", "storage"]
-      },
-      {
-        name: "Git",
-        description: "Version Control System",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["version control", "collaboration"]
-      },
-      {
-        name: "Bitbucket",
-        description: "Git Code Repository",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["version control", "ci/cd"]
-      },
-      {
-        name: "Jira",
-        description: "Project Management Tool",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg",
-        level: "advanced" as SkillLevel,
-        tags: ["agile", "project management"]
-      }
-    ]
-  }
-];
+    {
+      id: "programming",
+      label: "Languages & Framework",
+      skills: [
+        {
+          name: "Java",
+          description: "Enterprise Application Development",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+          level: "expert" as SkillLevel,
+          tags: ["backend", "enterprise", "microservices"]
+        },
+        {
+          name: "Go",
+          description: "Concurrent Systems & Infrastructure",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["backend", "infrastructure"]
+        },
+        {
+          name: "Python",
+          description: "Scripting, Automation, and API Development",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["scripting", "backend", "automation"]
+        },
+        {
+          name: "JavaScript",
+          description: "Frontend & Web Development",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["frontend", "web"]
+        },
+        {
+          name: "TypeScript",
+          description: "Typed Frontend Development",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["frontend", "web"]
+        },
+        {
+          name: "SQL",
+          description: "Relational Database Queries & Design",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+          level: "expert" as SkillLevel,
+          tags: ["database", "data"]
+        },
+           {
+              name: "Spring Boot",
+              description: "Microservices & Enterprise Backend Framework",
+              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg",
+              level: "expert" as SkillLevel,
+              tags: ["backend", "web", "microservices"]
+            },
+            {
+              name: "Angular",
+              description: "Component-Based Frontend Framework",
+              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
+              level: "advanced" as SkillLevel,
+              tags: ["frontend", "spa"]
+            },
+            {
+              name: "React",
+              description: "Modern Frontend Library for UI",
+              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+              level: "advanced" as SkillLevel,
+              tags: ["frontend", "spa"]
+            },
+            {
+              name: "Django",
+              description: "Backend python library for MVP",
+              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-original.svg",
+              level: "advanced" as SkillLevel,
+              tags: ["frontend", "spa"]
+            },
+            {
+              name: "Flask",
+              description: "Fast API builds library",
+              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+              level: "advanced" as SkillLevel,
+              tags: ["frontend", "spa"]
+            }
+      ]
+    },
+    {
+      id: "data",
+      label: "Data",
+      skills: [
+        {
+          name: "PostgreSQL",
+          description: "Advanced SQL Database",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+          level: "expert" as SkillLevel,
+          tags: ["sql", "database"]
+        },
+        {
+          name: "MySQL",
+          description: "Relational Database Management",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["sql", "database"]
+        },
+        {
+          name: "MongoDB",
+          description: "NoSQL Database for Unstructured Data",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["nosql", "database"]
+        },
+        {
+          name: "REST API",
+          description: "Service-Oriented & Microservice Design",
+          icon: "https://cdn-icons-png.flaticon.com/512/4248/4248443.png",
+          level: "expert" as SkillLevel,
+          tags: ["api", "soa", "microservices"]
+        }
+      ]
+    },
+    {
+      id: "devops",
+      label: "DevOps & Infra",
+      skills: [
+        {
+          name: "Terraform",
+          description: "Infrastructure as Code (IaC)",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg",
+          level: "expert" as SkillLevel,
+          tags: ["iac", "infrastructure"]
+        },
+        {
+          name: "Ansible",
+          description: "Automation & Configuration Management",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ansible/ansible-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["automation", "devops"]
+        },
+        {
+          name: "Jenkins",
+          description: "Continuous Integration/Deployment (CI/CD)",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg",
+          level: "expert" as SkillLevel,
+          tags: ["cicd", "automation"]
+        },
+        {
+          name: "GitHub Actions",
+          description: "Workflow Automation & CI/CD",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["cicd", "automation"]
+        },
+        {
+          name: "Kubernetes",
+          description: "Container Orchestration & Scaling",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["containers", "orchestration"]
+        },
+        {
+          name: "Docker",
+          description: "Containerization Platform",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+          level: "expert" as SkillLevel,
+          tags: ["containers", "deployment"]
+        },
+        {
+          name: "Helm",
+          description: "Kubernetes Package Management",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/helm/helm-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["kubernetes", "infrastructure"]
+        },
+        {
+          name: "AWS EC2",
+          description: "Compute Services",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["compute", "cloud"]
+        },
+        {
+          name: "AWS S3",
+          description: "Object Storage Service",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["storage", "cloud"]
+        },
+        {
+          name: "AWS SQS",
+          description: "Simple Queue Service",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["messaging", "cloud"]
+        }
+      ]
+    },
+    {
+      id: "messaging",
+      label: "Messaging",
+      skills: [
+        {
+          name: "Kafka",
+          description: "Distributed Event Streaming Platform",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["streaming", "messaging"]
+        },
+        {
+          name: "RabbitMQ",
+          description: "Message Broker for Asynchronous Systems",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["messaging", "integration"]
+        },
+        {
+          name: "IBM MQ",
+          description: "Enterprise Messaging Middleware",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ibm/ibm-original.svg",
+          level: "advanced" as SkillLevel,
+          tags: ["integration", "enterprise"]
+        }
+      ]
+    }
+  ];
+
 
 export default function SkillsSection() {
   const [selectedCategory, setSelectedCategory] = useState("languages");
@@ -600,20 +506,22 @@ export default function SkillsSection() {
               onValueChange={setSelectedCategory}
               className="w-full max-w-4xl mx-auto"
             >
-              <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 bg-card p-1 mb-8">
+              <TabsList className="flex bg-card p-1 mb-8">
                 {Object.keys(filteredSkills).map((categoryId) => {
                   const category = skillCategories.find(c => c.id === categoryId);
                   return (
-                    <TabsTrigger
-                      key={categoryId}
-                      value={categoryId}
-                      className="data-[state=active]:bg-primary/20 data-[state=active]:text-primary relative"
-                    >
-                      {category?.label}
-                      <span className="absolute -top-1 -right-1 text-xs bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center">
-                        {filteredSkills[categoryId].length}
-                      </span>
-                    </TabsTrigger>
+                      <div className="flex-auto">
+                        <TabsTrigger
+                          key={categoryId}
+                          value={categoryId}
+                          className="data-[state=active]:bg-primary/20 data-[state=active]:text-primary relative"
+                        >
+                          {category?.label}
+                          <span className="absolute -top-1 -right-1 text-xs bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center">
+                            {filteredSkills[categoryId].length}
+                          </span>
+                        </TabsTrigger>
+                    </div>
                   );
                 })}
               </TabsList>
